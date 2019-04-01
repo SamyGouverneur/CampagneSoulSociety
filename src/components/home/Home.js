@@ -3,7 +3,7 @@ import React from 'react'
 const Home = () => {
     return (
         <div id="home" className="row">
-            <div className="text col-6 my-auto">
+            <div className="text col-xs-12 col-sm-8 col-md-6 my-auto">
                 <div class="row">
                     <h1>Un Zoli Titre !</h1>
                 </div>
@@ -15,7 +15,7 @@ const Home = () => {
                     <a href="#concept">Découvrir MONSITE</a>
                 </div>
             </div>
-            <div className="illustration col-6">
+            <div className="illustration col-sm-4 col-md-6 my-auto">
                 <img class="img-fluid" src="/images/home_illustration.png" />
             </div>
         </div>

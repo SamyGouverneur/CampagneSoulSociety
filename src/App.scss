@@ -1,3 +1,7 @@
+.navbar .logo {
+    max-width: 10vw;
+    max-height: 10vh;
+}
 
 #home {
     .text {
@@ -27,5 +31,8 @@
     }
     .illustration {
         padding: 30pt;
+        @media (max-width: 580px) {
+            display: none;
+        }
     }
 }
