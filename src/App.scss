@@ -1,4 +1,38 @@
-.logo {
-  max-width: 10vw;
-  max-height: 10vh;
+.navbar .logo {
+    max-width: 10vw;
+    max-height: 10vh;
+}
+
+#home {
+    .text {
+        padding: 40pt;
+        line-height: 1em;
+        h1 {
+            font-size: 26pt;
+        }
+        p {
+            font-size: 12pt;
+        }
+        a {
+            font-weight: bold;
+            background-color: pink;
+            border: 0px solid black;
+            border-radius: 20px;
+            padding: 7pt 10pt;
+            color: white;
+            text-decoration-line: none;
+            &:hover {
+                background-color: darkorchid;
+            }
+        }
+        hr {
+           color: transparent;
+        }
+    }
+    .illustration {
+        padding: 30pt;
+        @media (max-width: 580px) {
+            display: none;
+        }
+    }
 }
