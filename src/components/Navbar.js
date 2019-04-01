@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => {
         return (
             <nav className="navbar navbar-expand-lg navbar-light">
-                <img alt="Logo" src="../../Images/defaultLogo.png" className="logo ml-5"/>
+                <img alt="Logo" src="../../images/defaultLogo.png" className="logo ml-5"/>
                 <button className="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">

@@ -6,6 +6,7 @@ import './App.scss';
 import Home from './components/home/Home';
 import { BrowserRouter } from "react-router-dom";
 import Navbar from './components/Navbar'
+import Pricing from './components/pricing/Pricing'
 
 class App extends Component {
   render() {
@@ -13,9 +14,10 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Navbar />
-          <header className="App-header">
+          <div className="all_sections">
             <Home />
-          </header>
+            <Pricing/>
+          </div>
         </div>
       </BrowserRouter>
     );
