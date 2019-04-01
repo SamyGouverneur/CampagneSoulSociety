@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Home = (props) => {
+const Home = () => {
     return (
         <div id="home" className="row">
             <div className="text col-6 my-auto">
