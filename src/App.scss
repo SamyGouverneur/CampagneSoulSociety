@@ -1,22 +1,48 @@
+/* GENERAL */
 h1 {
-    font-size: 26pt;
+  font-size: 26pt;
 }
-   
+
 h2 {
-font-size: 24pt;
+  font-size: 24pt;
+}
+
+h5 {
+  font-size: 20pt;
+  font-weight: bold;
 }
 
 p {
-font-size: 12pt;
+  font-size: 12pt;
 }
 
 .all_sections {
-padding: 0 7vw;
+  padding: 0 7vw;
 }
 
+.button {
+  font-weight: bold;
+  background-color: pink;
+  border: 0 solid black;
+  border-radius: 20px;
+  padding: 7pt 10pt;
+  color: white;
+  text-decoration-line: none;
+  min-width: 150px;
+  &:hover {
+    background-color: darkorchid;
+    text-decoration-line: none;
+    color: white;
+  }
+}
+
+/* NAVBAR */
 .navbar .logo {
-max-width: 10vw;
-max-height: 10vh;
+  max-width: 10vw;
+  max-height: 10vh;
+}
+.navbar {
+  background: rgba(255,255,255,0.9);
 }
 
 .button {
@@ -48,11 +74,61 @@ textarea {
     height: 90vh;
 }
 
+/* HOME */
+#home {
+  height: 90vh;
+  a {
+    color: white;
+    text-decoration-line: none;
+  }
+}
+
+/* CONCEPT */
 #concept {
-    .illustration {
-        padding: 5vw;
+  .illustration {
+    padding: 5vw;
+  }
+
+  .steps {
+    padding: 0 5vw;
+  }
+}
+
+/* PRICING */
+#pricing {
+  .section_pricing {
+    padding: 0 4vw;
+  }
+  .pricing_card {
+    width: 350px;
+    height: 550px;
+    border-radius: 20px;
+    transition: transform .3s;
+    &::after {
+      transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
+      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 5), 0 6px 20px 0 rgba(0, 0, 0, .15);
     }
-    .steps {
-        padding: 0 5vw;
+    &:hover,
+    &:focus {
+      transform: scale3d(1.020, 1.020, 1);
     }
+    .pricing_card:hover {
+      border-radius: 20px;
+    }
+    .card-header {
+      background-color: white;
+      border-bottom: 0;
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 15vh;
+      }
+    }
+    .pricing {
+      font-size: 28pt;
+      font-weight: bold;
+    }
+  }
 }
