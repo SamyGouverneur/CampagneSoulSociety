@@ -7,6 +7,7 @@ import Home from './components/home/Home';
 import { BrowserRouter } from "react-router-dom";
 import Navbar from './components/Navbar'
 import Concept from './components/concept/Concept'
+import Contact from './components/contact/Contact'
 import Pricing from './components/pricing/Pricing'
 
 
@@ -20,6 +21,7 @@ class App extends Component {
             <Home />
             <Concept />
             <Pricing />
+            <Contact />
           </div>
         </div>
       </BrowserRouter>
