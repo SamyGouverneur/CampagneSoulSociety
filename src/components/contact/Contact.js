@@ -19,7 +19,9 @@ export default class Contact extends Component {
             })
         }
         else if(!this.state.name.match("^([a-z A-Z ,.'-])*$")) {
-            alert("a");
+            this.setState({
+                errorName: 'Caractères spéciaux autorisés : , . \' -',
+            })
         }
         else {
             this.setState({
@@ -27,9 +29,9 @@ export default class Contact extends Component {
             })
         }
 
-        if(this.state.email.length<3) {
+        if(!this.state.email.match("^[\\w.]+@[a-zA-Z_]+?\\.[a-zA-Z]{2,3}$")) {
             this.setState({
-                errorEmail: '3 caractères minimum requis',
+                errorEmail: 'Adresse email non valide',
             })
         }
         else {
@@ -38,9 +40,9 @@ export default class Contact extends Component {
             })
         }
 
-        if(this.state.message.length<3) {
+        if(this.state.message.length<10) {
             this.setState({
-                errorMessage: '3 caractères minimum requis',
+                errorMessage: '10 caractères minimum requis',
             })
         }
         else {
@@ -87,7 +89,7 @@ export default class Contact extends Component {
 
                                 <div className="row no-gutters errorMessage">{this.state.errorEmail}</div>
                                 <div className="form-group row no-gutters">
-                                    <input className="" type="mail" name="email" placeholder="Email"
+                                    <input className="" type="email" name="email" placeholder="Email"
                                     onChange={this.handleMailChange} value={this.state.email} />
                                 </div>
 
