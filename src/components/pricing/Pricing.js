@@ -4,11 +4,11 @@ import CardPricing from './CardPricing'
 const Pricing = () => {
     return (
         <div id="pricing" className="row">
-            <div className="text">
-                <div className="row">
+            <div className="text col-12">
+                <div className="row pricing">
                     <h2>Tarifs</h2>
                 </div>
-                <div className="row">
+                <div className="row pricing">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloremque eius enim esse, fuga illum in ipsam labore nemo nisi possimus quas quo repellendus sit tempore temporibus voluptas? Provident, rerum.</p>
                 </div>
             </div>
