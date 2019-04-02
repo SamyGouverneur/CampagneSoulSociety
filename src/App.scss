@@ -1,38 +1,46 @@
+h1 {
+    font-size: 26pt;
+}
+   
+h2 {
+font-size: 24pt;
+}
+
+p {
+font-size: 12pt;
+}
+
+.all_sections {
+padding: 0 7vw;
+}
+
 .navbar .logo {
-    max-width: 10vw;
-    max-height: 10vh;
+max-width: 10vw;
+max-height: 10vh;
 }
 
 #home {
-    .text {
-        padding: 40pt;
-        line-height: 1em;
-        h1 {
-            font-size: 26pt;
-        }
-        p {
-            font-size: 12pt;
-        }
-        a {
-            font-weight: bold;
-            background-color: pink;
-            border: 0px solid black;
-            border-radius: 20px;
-            padding: 7pt 10pt;
-            color: white;
-            text-decoration-line: none;
-            &:hover {
-                background-color: darkorchid;
-            }
-        }
-        hr {
-           color: transparent;
+    height: 90vh;
+    a {
+        font-weight: bold;
+        background-color: pink;
+        border: 0px solid black;
+        border-radius: 20px;
+        padding: 7pt 10pt;
+        color: white;
+        text-decoration-line: none;
+
+        &:hover {
+        background-color: darkorchid;
         }
     }
+}
+
+#concept {
     .illustration {
-        padding: 30pt;
-        @media (max-width: 580px) {
-            display: none;
-        }
+        padding: 5vw;
+    }
+    .steps {
+        padding: 0 5vw;
     }
 }
