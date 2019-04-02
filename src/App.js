@@ -16,7 +16,7 @@ class App extends Component {
           <Navbar />
           <div className="all_sections">
             <Home />
-            <Pricing/>
+            <Pricing />
           </div>
         </div>
       </BrowserRouter>
