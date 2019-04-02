@@ -45,13 +45,19 @@ p {
   background: rgba(255,255,255,0.9);
 }
 
+/* CONTACT */
+input,
+textarea {
+    width: 25vw;
+}
+
+.errorMessage {
+    color: red;
+}
+
 /* HOME */
 #home {
   height: 90vh;
-  a {
-    color: white;
-    text-decoration-line: none;
-  }
 }
 
 /* CONCEPT */
