@@ -7,6 +7,7 @@ import Home from './components/home/Home';
 import { BrowserRouter } from "react-router-dom";
 import Navbar from './components/Navbar'
 import Concept from './components/concept/Concept'
+import Contact from './components/contact/Contact'
 
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
           <div className="all_sections">
             <Home />
             <Concept />
+            <Contact />
           </div>
         </div>
       </BrowserRouter>
