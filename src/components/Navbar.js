@@ -9,7 +9,7 @@ const Navbar = () => {
                         aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div id="navbar" className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <ul className="navbar-nav right">
                         <a className="nav-item nav-link my-2 ml-5 mr-5" href="#home">Le concept</a>
                         <a className="nav-item nav-link my-2 ml-5 mr-5" href="#">Tarifs</a>
