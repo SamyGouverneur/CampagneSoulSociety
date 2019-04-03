@@ -9,7 +9,7 @@ import Navbar from './components/Navbar'
 import Concept from './components/concept/Concept'
 import Contact from './components/contact/Contact'
 import Pricing from './components/pricing/Pricing'
-
+import Footer from './components/footer/Footer';
 
 class App extends Component {
   render() {
@@ -23,6 +23,7 @@ class App extends Component {
             <Pricing />
             <Contact />
           </div>
+          <Footer />
         </div>
       </BrowserRouter>
     );

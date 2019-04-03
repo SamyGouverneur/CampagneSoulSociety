@@ -45,22 +45,7 @@ p {
   background: rgba(255,255,255,0.9);
 }
 
-.button {
-    font-weight: bold;
-    background-color: pink;
-    border: 0px solid black;
-    border-radius: 20px;
-    padding: 7pt 10pt;
-    color: white;
-    text-decoration-line: none;
-    min-width: 150px;
-    &:hover {
-        background-color: darkorchid;
-        text-decoration-line: none;
-        color: white;
-    }
-}
-
+/* CONTACT */
 input,
 textarea {
     width: 25vw;
@@ -80,7 +65,6 @@ textarea {
   .illustration {
     padding: 5vw;
   }
-
   .steps {
     padding: 0 5vw;
   }
@@ -104,13 +88,12 @@ textarea {
     &:focus {
       transform: scale3d(1.020, 1.020, 1);
     }
-    .pricing_card:hover {
+    &:hover {
       border-radius: 20px;
     }
     .card-header {
       background-color: white;
       border-bottom: 0;
-
       img {
         display: block;
         margin-left: auto;
@@ -124,3 +107,72 @@ textarea {
     }
   }
 }
+
+/* FOOTER */
+footer {
+  padding: 4vw;
+  background: pink;
+  min-height: 100px;
+  img {
+    display: block;
+    max-width: 10vw;
+    max-height: 10vh;
+  }
+  .footer_links {
+    .links_footer {
+      color: black;
+      text-decoration: none;
+      position: absolute;
+      top: 50%;
+    }
+  }
+  .footer_socials_links {
+    .social_links {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      margin-top: 25px;
+    }
+    a {
+      color: black;
+      .fab {
+        position: absolute;
+      }
+      .fa-facebook-f {
+        margin:6px 12px;
+      }
+      .fa-twitter, .fa-linkedin-in {
+        margin:7px 8px;
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  footer {
+    padding: 5vw;
+    height: 150px;
+    .footer_links {
+      margin-left: 15px;
+      margin-top: 10px;
+      .links_footer {
+        position: initial;
+        margin-top: 15px;
+      }
+    }
+    .socials_links_fb {
+      margin-left: 210px;
+      margin-top: -70px;
+    }
+    .socials_links_twitter {
+      margin-left: 260px;
+      margin-top: -70px;
+    }
+    .socials_links_in {
+      margin-left: 310px;
+      margin-top: -70px;
+    }
+  }
+}
+

@@ -2,7 +2,7 @@ import React from 'react';
 
 const CardPricing = (props) => {
     return (
-        <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 section_pricing">
+        <div className="col-xl-4 col-lg-6 col-md-12 col-sm-12 section_pricing">
             <div className="card pricing_card mt-5">
                 <div className="card-header mt-4">
                     <img className="img-responsive picture_pricing" src="/images/penguin.png" alt="picture"/>
