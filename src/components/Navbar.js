@@ -2,16 +2,19 @@ import React from 'react';
 
 const Navbar = () => {
         return (
-            <nav className="navbar fixed-top navbar-expand-lg navbar-light">
-                <a href="#home">
-                    <img alt="Logo" src="../../images/defaultLogo.png" className="logo ml-5"/>
-                </a>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div className="navLogo">
+                    <a href="#home">
+                        <img alt="Logo" src="../../images/defaultLogo.png" className="logo ml-5"/>
+                        <span>Bonjour+</span>
+                    </a>
+                </div>
                 <button className="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div className="collapse navbar-collapse justify-content-end text-right" id="navbarNavAltMarkup">
                     <ul className="navbar-nav right">
                         <a className="nav-item nav-link my-2 ml-5 mr-5" href="#concept">Le concept</a>
                         <a className="nav-item nav-link my-2 ml-5 mr-5" href="#pricing">Tarifs</a>
