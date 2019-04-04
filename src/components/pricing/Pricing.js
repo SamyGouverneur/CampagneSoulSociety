@@ -1,8 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import CardPricing from './CardPricing'
 
-export default class Pricing extends Component {
-  render() {
+const Pricing = () => {
     return (
         <div id="pricing" className="container-fluid">
             <div className="container">
@@ -46,5 +45,5 @@ export default class Pricing extends Component {
             </div>
         </div>
     );
-  }
 }
+export default Pricing;
