@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import CardPricing from './CardPricing'
 
 const Pricing = () => {
@@ -21,6 +21,7 @@ const Pricing = () => {
                         user="1 utilisateur"
                         equipment="1 interphone"
                         details="Message texte"
+                        message="C'est moins cher que gratuit !"
                     />
                     <CardPricing
                         format="Premium"
@@ -29,6 +30,7 @@ const Pricing = () => {
                         user="3 utilisateurs"
                         equipment="2 interphones"
                         details="Audio et vidéo"
+                        message="Pour le prix de deux kébabs !"
                     />
                     <CardPricing
                         format="Entreprise"
@@ -37,11 +39,11 @@ const Pricing = () => {
                         user="Utilisateurs multiples"
                         equipment="Interphones multiples"
                         details="Options personnalisées"
+                        message="Bon là j'ai pas d'idées de messages."
                     />
                 </div>
             </div>
         </div>
     );
 }
-
 export default Pricing;
