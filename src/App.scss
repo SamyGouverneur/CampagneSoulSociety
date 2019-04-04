@@ -22,6 +22,12 @@ h2 {
   font-family: "BrandonGrotesque-Bold";
 }
 
+h3 {
+  font-size: 23pt;
+  font-family: "BrandonGrotesque-Bold";
+}
+
+
 h5 {
   font-size: 20pt;
   font-weight: bold;
@@ -121,6 +127,10 @@ p {
   background-image: url("/images/background_vagues_top.jpg");
   background-position: bottom;
   display: flex;
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
   .plaque {
     max-width: 70vw;
     max-height: 70vh;
@@ -138,10 +148,16 @@ p {
   min-height: 100vh;
   background-image: url("/images/background_vagues_bottom.jpg");
   background-position: top;
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
   .pricing_card {
     width: 350px;
     height: 550px;
-    border-radius: 20px;
+    border-radius: 0;
+    background-color: darkorange;
+    color: white;
     transition: transform .3s;
     &::after {
       transition: opacity 2s cubic-bezier(.165, .84, .44, 1);
@@ -152,21 +168,30 @@ p {
       transform: scale3d(1.020, 1.020, 1);
     }
     &:hover {
-      border-radius: 20px;
-    }
-    .card-header {
-      background-color: white;
-      border-bottom: 0;
-      img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 15vh;
-      }
+      border-radius: 0;
     }
     .pricing {
-      font-size: 28pt;
+      font-size: 4rem;
       font-weight: bold;
+      margin: 0;
+    }
+    .subscription {
+      font-size: 1.4rem;
+    }
+    .fonction {
+      margin-top: 10vh;
+      .presentation {
+        font-size: 1.2rem;
+        line-height: 1.2vh;
+        margin-left: 20px;
+      }
+    }
+    .plus {
+      a {
+        font-size: 3rem;
+        text-decoration: none;
+        color: white;
+      }
     }
   }
 }
@@ -273,6 +298,13 @@ footer {
   }
   #medias {
     min-height: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .pricing_card {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
