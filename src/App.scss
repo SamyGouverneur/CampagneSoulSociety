@@ -1,4 +1,6 @@
 /* GENERAL */
+$bottomColor: rgb(28, 28, 28);
+
 
 @font-face {
   font-family: "BrandonGrotesque-Bold";
@@ -98,7 +100,7 @@ textarea {
 
 /* HOME */
 #home { 
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(#1C1C1C,#262626,#1C1C1C);
   color: white;
   .text {
@@ -125,7 +127,7 @@ textarea {
 
 /* CONCEPT */
 #concept {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("/images/background_vagues_top.jpg");
   background-position: bottom;
   display: flex;
@@ -143,7 +145,7 @@ textarea {
 
 /* PRICING */
 #pricing {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("/images/background_vagues_bottom.jpg");
   background-position: top;
   .pricing_card {
@@ -221,11 +223,49 @@ footer {
   }
 }
 
+#medias {
+  background: linear-gradient(
+    top,
+    rgba(163,163,163,1) 0%,
+    rgba(135,134,132,1) 10%,
+    rgba(224,151,4,1) 10%,
+    rgba(240,160,0,1) 90%,
+    $bottomColor 90%,
+    $bottomColor 100%
+  );
+  min-height: 120vh;
+}
+
+#speakers,
+#prices {
+  background-color: #fff;
+  padding: 50px 0;
+  img {
+    object-fit: contain;
+  }
+  p {
+    margin: 0;
+    font-size: 12pt;
+  }
+}
+
+#prices {
+  margin-top: 50px;
+  align-content: flex-end;
+}
+
+#contact {
+  background: $bottomColor;
+}
+
 @media (max-width: 1024px) {
   #concept,
   #pricing {
     height: 100%;
     padding-bottom: 50px;
+  }
+  #medias {
+    min-height: 100%;
   }
 }
 
@@ -251,6 +291,9 @@ footer {
         mask-image: linear-gradient(to top, rgba(0,0,0,1) 40%, rgba(0,0,0,0));
       }
     }
+  }
+  #prices {
+    margin-top: 10px;
   }
 }
 
