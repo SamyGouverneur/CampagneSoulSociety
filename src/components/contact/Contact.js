@@ -74,12 +74,12 @@ export default class Contact extends Component {
     render() {
         return (
             <div>
-                <div id="contact" className="row">
-                    <div className="col-xs-12 my-auto">
+                <div id="contact">
+                    <div className="col-md-8 offset-md-2 my-auto">
                         <h2>Contact</h2>
                         <p>Formulaire de contact. Chouette.</p>
-                        <div className="contact_form text-center">
-                            <form onSubmit={this.handleSubmit}>
+                        <div className="contact_form justify-content-center">
+                            <form onSubmit={this.handleSubmit} className="col-md-6 offset-md-3 mt-5">
 
                                 <div className="row no-gutters errorMessage">{this.state.errorName}</div>
                                 <div className="form-group row no-gutters">
@@ -89,14 +89,13 @@ export default class Contact extends Component {
 
                                 <div className="row no-gutters errorMessage">{this.state.errorEmail}</div>
                                 <div className="form-group row no-gutters">
-                                    <input className="" type="email" name="email" placeholder="Email"
+                                    <input className="" type="text" name="email" placeholder="Email"
                                     onChange={this.handleMailChange} value={this.state.email} />
                                 </div>
 
                                 <div className="row no-gutters errorMessage">{this.state.errorMessage}</div>
                                 <div className="form-group row no-gutters">
-                                    <textarea className="
-                                    " type="text" name="message" placeholder="Message"
+                                    <textarea type="text" name="message" placeholder="Message" rows="10"
                                     onChange={this.handleMessageChange} value={this.state.message}></textarea>
                                 </div>
                                 <button className="button" type="submit" value="submit">Envoyer</button>

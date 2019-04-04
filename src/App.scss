@@ -1,5 +1,5 @@
 /* GENERAL */
-$bottomColor: rgb(28, 28, 28);
+$bottomColor: rgb(42, 41, 41);
 
 
 @font-face {
@@ -45,7 +45,7 @@ p {
   color: white;
   text-decoration-line: none;
   min-width: 150px;
-  font-size: 2vw;
+  font-size: 14pt;
   &:hover {
     background-color: darkorange;
     text-decoration-line: none;
@@ -86,16 +86,6 @@ p {
       text-decoration: none;
     }
   }
-}
-
-/* CONTACT */
-input,
-textarea {
-    width: 25vw;
-}
-
-.errorMessage {
-    color: red;
 }
 
 /* HOME */
@@ -254,8 +244,25 @@ footer {
   align-content: flex-end;
 }
 
+/* CONTACT */
 #contact {
+  color: white;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   background: $bottomColor;
+  input,
+  textarea,
+  button {
+    width: 100%;
+  }
+  input,
+  textarea {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .errorMessage {
+      color: orange;
+  }
 }
 
 @media (max-width: 1024px) {
