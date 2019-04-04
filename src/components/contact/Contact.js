@@ -95,7 +95,7 @@ export default class Contact extends Component {
 
                                 <div className="row no-gutters errorMessage">{this.state.errorMessage}</div>
                                 <div className="form-group row no-gutters">
-                                    <textarea type="text" name="message" placeholder="Message" rows="10"
+                                    <textarea id="message" type="text" name="message" placeholder="Message" rows="10"
                                     onChange={this.handleMessageChange} value={this.state.message}></textarea>
                                 </div>
                                 <button className="button" type="submit" value="submit">Envoyer</button>
