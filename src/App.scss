@@ -1,7 +1,7 @@
 /* GENERAL */
 
 @font-face {
-  font-family: "BrandonGrostesque-Bold";
+  font-family: "BrandonGrotesque-Bold";
   src: url("/fonts/BrandonGrotesque-Bold.otf");
  }
  @font-face {
@@ -10,15 +10,14 @@
  }
 
 h1 {
-  //font-size: 2.4em;
   font-size: 3.3vw;
-  font-family: "BrandonGrostesque-Bold";
+  font-family: "BrandonGrotesque-Bold";
   z-index: 5;
 }
 
 h2 {
   font-size: 24pt;
-  font-family: "BrandonGrostesque-Bold";
+  font-family: "BrandonGrotesque-Bold";
 }
 
 h5 {
@@ -28,7 +27,7 @@ h5 {
 
 p {
   z-index: 5;
-  font-size: 1.65vw;
+  font-size: 12pt;
   font-family: "BrandonText-Regular";
 }
 
@@ -65,7 +64,7 @@ p {
       }
       span {
         margin-left: 10px;
-        font-family: "BrandonGrostesque-Bold";
+        font-family: "BrandonGrotesque-Bold";
         font-size: 1.6vw;
         margin-right: 48px;
       }
@@ -126,19 +125,27 @@ textarea {
 
 /* CONCEPT */
 #concept {
-  .illustration {
-    padding: 5vw;
+  height: 100vh;
+  background-image: url("/images/background_vagues_top.jpg");
+  background-position: bottom;
+  display: flex;
+  .plaque {
+    max-width: 70vw;
+    max-height: 70vh;
   }
-  .steps {
-    padding: 0 5vw;
+}
+
+@media (max-height: 415px) {
+  #concept {
+    height: 150vh;
   }
 }
 
 /* PRICING */
 #pricing {
-  .section_pricing {
-    padding: 0 4vw;
-  }
+  height: 100vh;
+  background-image: url("/images/background_vagues_bottom.jpg");
+  background-position: top;
   .pricing_card {
     width: 350px;
     height: 550px;
@@ -211,6 +218,14 @@ footer {
         margin:7px 8px;
       }
     }
+  }
+}
+
+@media (max-width: 1024px) {
+  #concept,
+  #pricing {
+    height: 100%;
+    padding-bottom: 50px;
   }
 }
 
