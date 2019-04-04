@@ -7,37 +7,40 @@ const Pricing = () => {
             <div className="container">
                 <div className="row">
                     <div className="text col-12">
-                        <div className="row pricing">
+                        <div className="row">
                             <h2>Tarifs</h2>
                         </div>
-                        <div className="row pricing">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloremque eius enim esse,
-                                fuga illum in ipsam labore nemo nisi possimus quas quo repellendus sit tempore temporibus
-                                voluptas? Provident, rerum.</p>
+                        <div className="row">
+                            <p>Les offres seront bientôt disponibles !</p>
                         </div>
                     </div>
                     <CardPricing
-                        format="EXPO"
-                        title="Speed meeting"
-                        details="Idéal lorsque vous souhaitez que tout .........."
-                        pricing="20"
+                        format="Freemium"
+                        pricing="0€"
+                        subscription="Sans abonnement"
+                        user="1 utilisateur"
+                        equipment="1 interphone"
+                        details="Message texte"
                     />
                     <CardPricing
-                        format="EXPO"
-                        title="Speed meeting"
-                        details="Idéal lorsque vous souhaitez que tout .........."
-                        pricing="20"
+                        format="Premium"
+                        pricing="10€"
+                        subscription="1 an d'abonnement"
+                        user="3 utilisateurs"
+                        equipment="2 interphones"
+                        details="Audio et vidéo"
                     />
                     <CardPricing
-                        format="EXPO"
-                        title="Speed meeting"
-                        details="Idéal lorsque vous souhaitez que tout .........."
-                        pricing="20"
+                        format="Entreprise"
+                        pricing="Devis"
+                        subscription="1 an d'abonnement"
+                        user="Utilisateurs multiples"
+                        equipment="Interphones multiples"
+                        details="Options personnalisées"
                     />
                 </div>
             </div>
         </div>
-
     );
 }
 
