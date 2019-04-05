@@ -2,19 +2,22 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className=" mt-5 pt-3 pb-3">
-            <div className="row">
-                <div className="col-lg-2 col-md-3 col-sm-3">
-                    <img alt="Logo" src="../../images/defaultLogo.png" className="logo ml-5"/>
+        <footer>
+            <div className="row no-gutters">
+                <div className="col-lg-3 col-md-5 col-sm-5">
+                    <img alt="Logo" src="../../images/Logo.png" className="logo"/>
                 </div>
-                <div className="col-lg-1 col-md-2 col-sm-2 footer_links">
+                <div className="col-lg-1 col-md-1 col-sm-1 footer_links cgv_link">
                     <a href="CGV" className="links_footer">CGV</a>
                 </div>
-                <div className="col-lg-5 col-md-3 col-sm-3 footer_links">
+                <div className="col-lg-2 col-md-3 col-sm-2 footer_links legal_link">
                     <a href="legal-notice" className="links_footer">Mentions Légales</a>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-4 footer_socials_links">
-                    <div className="row">
+                <div className="col-lg-2 col-md-3 col-sm-3 footer_links partners_link">
+                    <a href="partenaires" className="links_footer">Partenaires</a>
+                </div>
+                <div className="col-lg-3 offset-1 col-md-6 col-sm-12 footer_socials_links">
+                    <div className="row no-gutters">
                         <div className="col-lg-2 col-md-4 col-sm-4 socials_links_fb">
                             <a href="#" className="social_links"><i className="fab fa-facebook-f fa-2x"></i></a>
                         </div>
