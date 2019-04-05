@@ -16,13 +16,23 @@ const Speakers = () => {
         <h2>Ils parlent de nous !</h2>
         <p>Youpiiiiiiiiiiiii iiiiiii !</p>
         <div className="row mt-4">
-          <img src="/images/france3.jpg" className="img-fluid col-4" />
-          <img src="/images/la_rep.jpg" className="col-4" />
-          <img src="/images/la_tribune.jpg" className="col-4" />
+            <div className="col-4 text-center">
+                <img src="/images/france3.jpg" />
+            </div>
+            <div className="col-4 text-center">
+                <img src="/images/la_rep.jpg" />
+            </div>
+            <div className="col-4 text-center">
+                <img src="/images/la_tribune.jpg" />
+            </div>
         </div>
         <div className="row mt-4">
-          <img src="/images/bfm.jpg" className="img-fluid col-4" />
-          <img src="/images/france_bleu.jpg" className="col-4" />
+            <div className="col-4 text-center">
+                <img src="/images/bfm.jpg" />
+            </div>
+            <div className="col-4 text-center">
+                <img src="/images/france_bleu.jpg" />
+            </div>
         </div>
       </div>
     </div>
@@ -36,9 +46,15 @@ const Prices = () => {
         <h2>On a gagnés des trucks !</h2>
         <p>On est les meilleurs, c'est tout !</p>
         <div className="row mt-4">
-          <img src="/images/startup_weekend.jpg" className="col-4" />
-          <img src="/images/10000_startups.jpg" className="col-4" />
-          <img src="/images/human_tech_days.jpg" className="col-4" />
+            <div className="col-4 text-center">
+                <img src="/images/startup_weekend.jpg" />
+            </div>
+            <div className="col-4 text-center">
+                <img src="/images/10000_startups.jpg" />
+            </div>
+            <div className="col-4 text-center">
+                <img src="/images/human_tech_days.jpg" />
+            </div>
         </div>
         <div className="row mt-4">
 

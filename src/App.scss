@@ -12,18 +12,18 @@ $bottomColor: rgb(42, 41, 41);
  }
 
 h1 {
-  font-size: 3.3vw;
+  font-size: 3.5em;
   font-family: "BrandonGrotesque-Bold";
   z-index: 5;
 }
 
 h2 {
-  font-size: 24pt;
+  font-size: 3em;
   font-family: "BrandonGrotesque-Bold";
 }
 
 h3 {
-  font-size: 23pt;
+  font-size: 2.5em;
   font-family: "BrandonGrotesque-Bold";
 }
 
@@ -35,7 +35,7 @@ h5 {
 
 p {
   z-index: 5;
-  font-size: 12pt;
+  font-size: 1.8em;
   font-family: "BrandonText-Regular";
 }
 
@@ -43,15 +43,15 @@ p {
 .button {
   margin-top: 2%;
   z-index: 5;
-  font-weight: bold;
   font-family: "BrandonText-Regular";
   background-color: orange;
   border: 0 solid black;
   padding: 7pt 10pt;
+  margin-bottom: 30px;
   color: white;
   text-decoration-line: none;
   min-width: 150px;
-  font-size: 14pt;
+  font-size: 1.8em;
   &:hover {
     background-color: darkorange;
     text-decoration-line: none;
@@ -61,31 +61,29 @@ p {
 
 /* NAVBAR */
 .navbar {
-  background: linear-gradient(#000, rgb(13, 13, 13)) !important;
+  background: transparent !important;
+  position: absolute;
+  top:0;
   padding: 0;
+  z-index: 20;
+  width: 100%;
   .navLogo {
-    padding: 10px 0;
     background-color: rgba(255,255,255,.1);
       .logo {
-        max-width: 10vw;
-        max-height: 10vh;
-      }
-      span {
-        margin-left: 10px;
-        font-family: "BrandonGrotesque-Bold";
-        font-size: 1.6vw;
-        margin-right: 48px;
+        height: 10vh;
+        min-height: 70px;
       }
   }
   .navbar-toggler {
     margin: 10px 15px;
+    float: right !important;
   }
   .navbar-collapse {
     padding: 5px !important;
   }
   a {
     font-family: "BrandonText-Regular";
-    font-size: 1.4vw;
+    font-size: 1em;
     color: white !important;
     z-index: 5;
     &:hover {
@@ -105,6 +103,7 @@ p {
   .bgColor {
     padding: 0 7vw;
     background: linear-gradient(rgba(0,0,0,.6), transparent);
+    max-width: 100vw;
   }
   p {
     margin-top: .5em;
@@ -113,10 +112,12 @@ p {
   .illustration {
     position: absolute;
     top: 0;
-    left: 50vw;
+    right: 10vw;
     img {
       max-height: 100vh;
+      max-width: 90vw;
       mask-image: linear-gradient(to top, rgba(0,0,0,1) 70%, rgba(0,0,0,0));
+      overflow: hidden;
     }
   }
 }
@@ -153,8 +154,8 @@ p {
     margin-left: 0;
   }
   .pricing_card {
-    width: 350px;
-    height: 550px;
+    width: 300px;
+    height: 500px;
     border-radius: 0;
     background-color: darkorange;
     color: white;
@@ -175,13 +176,10 @@ p {
       font-weight: bold;
       margin: 0;
     }
-    .subscription {
-      font-size: 1.4rem;
-    }
     .fonction {
-      margin-top: 10vh;
+      margin-top: 40px;
       .presentation {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         line-height: 1.2vh;
         margin-left: 20px;
       }
@@ -238,6 +236,7 @@ footer {
   }
 }
 
+/* MEDIAS */
 #medias {
   background: linear-gradient(
     top,
@@ -255,12 +254,17 @@ footer {
 #prices {
   background-color: #fff;
   padding: 50px 0;
+  .img-container {
+    height: 15vh;
+  }
   img {
     object-fit: contain;
+    max-width: 150px;
+    max-height: 1500px;
   }
   p {
     margin: 0;
-    font-size: 12pt;
+    font-size: 1.3em;
   }
 }
 
@@ -319,13 +323,10 @@ footer {
     p {
       font-size: 1.3em;
     }
-    .button {
-      font-size: 1.8em;
-    }
     .illustration {
       position: absolute;
       top: 0;
-      left: 10vw;
+      right: 10vw;
       img {
         mask-image: linear-gradient(to top, rgba(0,0,0,1) 40%, rgba(0,0,0,0));
       }
