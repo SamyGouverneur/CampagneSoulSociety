@@ -165,8 +165,6 @@ p {
   min-height: 100vh;
   background-image: url("/images/background_vagues_bottom.jpg");
   background-position: top;
-  display: flex !important;
-  align-items: center !important;
   .row {
     margin-right: 0;
     margin-left: 0;
@@ -203,6 +201,10 @@ p {
       font-size: 4rem;
       font-weight: bold;
       margin: 0;
+    }
+
+    .subscription {
+      font-size: 2em;
     }
 
     .fonction {
@@ -363,41 +365,39 @@ footer {
 
 /* MEDIAS */
 #medias {
-  background: linear-gradient(
-                  top,
-                  #F6F6F6 0%,
-                  #F6F6F6 10%,
-                  orange 10%,
-                  orange 90%,
-                  $bottomColor 90%,
-                  $bottomColor 100%
-  );
-  min-height: 120vh;
+  margin-top: -15vh;
+  .bg_gradient {
+    background: linear-gradient(
+                    top,
+                    transparent 0%,
+                    transparent 10%,
+                    orange 10%,
+                    orange 90%,
+                    $bottomColor 90%,
+                    $bottomColor 100%
+    );
+    min-height: 120vh;
+  }
 }
 
 #speakers,
 #prices {
   background-color: #fff;
   padding: 50px 0;
-
-  .img-container {
-    height: 15vh;
-  }
-
+  min-height: 55vh;
+  display: flex !important;
+  align-items: center !important;
   img {
     object-fit: contain;
-    max-width: 150px;
-    max-height: 1500px;
+    min-width: 150px;
+    min-height: 150px;
+    width: 10vw !important;
   }
 
-  p {
-    margin: 0;
-    font-size: 1.3em;
-  }
 }
 
 #prices {
-  margin-top: 50px;
+  margin-top: 10vh;
   align-content: flex-end;
 }
 
@@ -487,9 +487,12 @@ footer {
   .pricing_card {
     margin-left: auto;
     margin-right: auto;
-  }
+    }
   .navbar {
     background-color: rgba(0, 0, 0, .5) !important;
+  }
+  #medias {
+    margin-top: 0;
   }
 }
 
@@ -530,6 +533,10 @@ footer {
 }
 
 @media (max-width: 991px) {
+  .prices_display {
+    display: flex !important;
+    flex-direction: row !important;
+  }
   footer {
     img {
       background-color: $bottomColor;
@@ -596,6 +603,9 @@ footer {
   .pricing_card {
     width: 450px !important;
     height: 650px !important;
+    .subscription {
+      font-size: 2.7em !important;
+    }
   }
   .pricing {
     font-size: 5rem !important;
