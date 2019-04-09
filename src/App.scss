@@ -293,29 +293,27 @@ p {
 
 /* FOOTER */
 footer {
-  background-color: $bottomColor;
-
+  background: $bottomColor;
+  .footer {
+    display: flex;
+    align-items: center;
+  }
   img {
     background-color: #2D2D2D;
     max-height: 10vh;
     padding: 1vh;
   }
-
   .links {
     a:hover {
       color: $orange !important;
     }
   }
-
   .footer_links {
     .links_footer {
       color: white;
       text-decoration: none;
-      position: absolute;
-      top: 50%;
     }
   }
-
   .footer_socials_links {
     .social_links {
       width: 45px;
@@ -323,52 +321,70 @@ footer {
       border-radius: 50%;
       background: white;
       position: absolute;
-      margin-top: 25px;
+      margin-top: -25px;
     }
-
     a {
-      color: $bottomColor !important;
-
+      color: $bottomColor;
       .fab {
         position: absolute;
       }
-
       .fa-facebook-f {
-        margin: 6px 12px;
+        margin:6px 12px;
       }
-
       .fa-twitter, .fa-linkedin-in {
-        margin: 7px 8px;
+        margin:7px 8px;
       }
     }
   }
 }
-
 
 /* MEDIA QUERIES */
-
-@media (min-width: 992px) and (max-width: 1090px) {
+@media (max-width: 320px) {
   footer {
-    .cgv_link, .legal_link, .partners_link {
-      text-align: center;
+    .socials_links_fb {
+      margin-left: 120px;
+      margin-top: -70px;
+    }
+    .socials_links_twitter {
+      margin-left: 170px;
+      margin-top: -70px;
+    }
+    .socials_links_in {
+      margin-left: 220px;
+      margin-top: -70px;
     }
   }
 }
 
-@media (min-width: 991px) {
+@media (max-height: 415px) {
+  #concept, #footer {
+    height: 150vh;
+  }
+}
+
+@media (max-width: 575px) {
   footer {
-    .footer_socials_links {
-      .socials_links_fb, .socials_links_twitter, .socials_links_in {
-        padding-right: 60px;
+    padding: 5vw;
+    height: 250px;
+    .footer_links {
+      margin-left: 15px;
+      margin-top: 10px;
+      .links_footer {
+        position: initial;
+        margin-top: 15px;
       }
     }
-  }
-}
-
-@media (max-width: 991px) {
-  footer {
-    img {
-      background-color: $bottomColor;
+    .socials_links_fb {
+      margin-left: 160px;
+      margin-top: -70px;
+    }
+    .socials_links_twitter {
+      margin-left: 210px;
+      margin-top: -70px;
+    }
+    .socials_links_in {
+      margin-left: 260px;
+      margin-top: -70px;
     }
   }
 }
@@ -376,77 +392,13 @@ footer {
 @media (min-width: 576px) and (max-width: 991px) {
   footer {
     padding: 5vw;
-    height: 220px;
-
-    .footer_links {
-      margin-top: 30px;
-
-      .links_footer {
-        position: initial;
-        margin-top: 15px;
-      }
+    height: 270px;
+    .social_links {
+      margin-top: 10% !important;
     }
-
-    .cgv_link, .legal_link {
+    .cgv_link, .legal_link, .partners_link {
       text-align: center;
     }
-  }
-}
-
-@media (max-width: 575px) {
-  footer {
-    padding: 5vw;
-    height: 220px;
-
-    .footer_links {
-      margin-left: 15px;
-      margin-top: 10px;
-
-      .links_footer {
-        position: initial;
-        margin-top: 15px;
-      }
-    }
-
-    .socials_links_fb {
-      margin-left: 210px;
-      margin-top: -70px;
-    }
-
-    .socials_links_twitter {
-      margin-left: 260px;
-      margin-top: -70px;
-    }
-
-    .socials_links_in {
-      margin-left: 310px;
-      margin-top: -70px;
-    }
-  }
-}
-
-@media (max-width: 1024px) {
-  #concept,
-  #pricing {
-    height: 100%;
-    padding-bottom: 50px;
-  }
-  #medias {
-    min-height: 100%;
-  }
-}
-
-@media (max-width: 991px) {
-  #pricing {
-    padding-bottom: 30vh;
-    .pricing_card {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
-  .navbar {
-    background-color: rgba(0, 0, 0, .5) !important;
   }
 }
 
@@ -473,14 +425,6 @@ footer {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1090px) {
-  footer {
-    .cgv_link, .legal_link, .partners_link {
-      text-align: center;
-    }
-  }
-}
-
 @media (min-width: 991px) {
   footer {
     .footer_socials_links {
@@ -492,6 +436,16 @@ footer {
 }
 
 @media (max-width: 991px) {
+  #pricing {
+    padding-bottom: 30vh;
+    .pricing_card {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .navbar {
+    background-color: rgba(0, 0, 0, .5) !important;
+  }
   .prices_display {
     display: flex !important;
     flex-direction: row !important;
@@ -499,67 +453,19 @@ footer {
 
   footer {
     img {
-      background-color: $bottomColor;
+      background-color: $bottomColor !important;
     }
   }
 }
 
-
-@media (max-height: 415px) {
-  #concept {
-    height: 150vh;
+@media (max-width: 1024px) {
+  #concept,
+  #pricing {
+    height: 100%;
+    padding-bottom: 50px;
   }
-}
-
-@media (min-width: 576px) and (max-width: 991px) {
-  footer {
-    padding: 5vw;
-    height: 220px;
-
-    .footer_links {
-      margin-top: 30px;
-
-      .links_footer {
-        position: initial;
-        margin-top: 15px;
-      }
-    }
-
-    .cgv_link, .legal_link {
-      text-align: center;
-    }
-  }
-}
-
-@media (max-width: 575px) {
-  footer {
-    padding: 5vw;
-    height: 220px;
-
-    .footer_links {
-      margin-left: 15px;
-      margin-top: 10px;
-
-      .links_footer {
-        position: initial;
-        margin-top: 15px;
-      }
-    }
-
-    .socials_links_fb {
-      margin-left: 150px;
-      margin-top: -70px;
-    }
-
-    .socials_links_twitter {
-      margin-left: 200px;
-      margin-top: -70px;
-    }
-
-    .socials_links_in {
-      margin-left: 250px;
-      margin-top: -70px;
-    }
+  #medias {
+    min-height: 100%;
   }
 }
 
@@ -587,5 +493,33 @@ footer {
       font-size:1.7rem !important;
       line-height: 1.2em !important;
     }
+  }
+  .footer_links {
+    display: flex !important;
+    align-items: center !important;
+    font-size: 2.4em !important;
+  }
+  .social_links {
+    width: 90px !important;
+    height: 90px !important;
+    margin-top: -50px !important;
+    margin-left: 250px !important;
+    font-size: 2.2em !important;
+    padding: 0 !important;
+    .fab {
+      position: absolute !important;
+    }
+    .fa-facebook-f {
+      margin: 10px 22px !important;
+    }
+    .fa-twitter {
+      margin: 12px 12px !important;
+    }
+    .fa-linkedin-in {
+      margin: 12px 14px !important;
+    }
+  }
+  .links {
+    justify-content: center !important;
   }
 }
