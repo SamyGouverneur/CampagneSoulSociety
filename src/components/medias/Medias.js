@@ -19,21 +19,21 @@ const Speakers = () => {
                 <p>Youpiiiiiiiiiiiii iiiiiii !</p>
                 <div className="row mt-4">
                     <div className="col-xs-12 col-md-4 text-center">
-                        <img src="/images/france3.jpg" alt="logo france3"/>
+                        <img src="/images/parteners/france3.jpg" alt="logo france3"/>
                     </div>
                     <div className="col-xs-12 col-md-4 text-center">
-                        <img src="/images/la_rep.jpg" alt="logo la république du centre"/>
+                        <img src="/images/parteners/la_rep.jpg" alt="logo la république du centre"/>
                     </div>
                     <div className="col-xs-12 col-md-4 text-center">
-                        <img src="/images/la_tribune.jpg" alt="logo la tribune"/>
+                        <img src="/images/parteners/la_tribune.jpg" alt="logo la tribune"/>
                     </div>
                 </div>
                 <div className="row mt-4">
                     <div className="col-xs-12 col-md-4 text-center">
-                        <img src="/images/bfm.jpg" alt="logo bfm"/>
+                        <img src="/images/parteners/bfm.jpg" alt="logo bfm"/>
                     </div>
                     <div className="col-xs-12 col-md-4 text-center">
-                        <img src="/images/france_bleu.jpg" alt="logo france bleu"/>
+                        <img src="/images/parteners/france_bleu.jpg" alt="logo france bleu"/>
                     </div>
                 </div>
             </div>
@@ -50,13 +50,13 @@ const Prices = () => {
                 <div className="prices_display">
                     <div className="row mt-4">
                         <div className="col-xs-12 col-lg-4 text-center my-auto">
-                            <img src="/images/startup_weekend.jpg" alt="logo startup weekend"/>
+                            <img src="/images/parteners/startup_weekend.jpg" alt="logo startup weekend"/>
                         </div>
                         <div className="col-xs-12 col-lg-4 text-center my-auto">
-                            <img src="/images/10000_startups.jpg" alt="logo 10000 startups pour changer le monde"/>
+                            <img src="/images/parteners/10000_startups.jpg" alt="logo 10000 startups pour changer le monde"/>
                         </div>
                         <div className="col-xs-12 col-lg-4 text-center my-auto">
-                            <img src="/images/human_tech_days.jpg" alt="logo human tech days"/>
+                            <img src="/images/parteners/human_tech_days.jpg" alt="logo human tech days"/>
                         </div>
                     </div>
                     <div className="row">
