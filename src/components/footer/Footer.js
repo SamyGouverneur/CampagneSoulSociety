@@ -2,33 +2,27 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer>
-            <div className="row no-gutters footer">
-                <div className="col-lg-3 col-md-5 col-sm-5">
+        <footer className="row no-gutters footer d-lg-flex justify-content-lg-between">
+            <div className="col-md-3 col-xs-1 d-md-flex text-center">
+                <a href="#home">
                     <img alt="Logo" src="../../images/Logo.png" className="logo"/>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 links footer_links cgv_link">
-                    <a href="CGV" className="links_footer">CGV</a>
-                </div>
-                <div className="col-lg-2 col-md-3 col-sm-2 links footer_links legal_link">
-                    <a href="legal-notice" className="links_footer">Mentions Légales</a>
-                </div>
-                <div className="col-lg-2 col-md-3 col-sm-3 links footer_links partners_link">
-                    <a href="partenaires" className="links_footer">Partenaires</a>
-                </div>
-                <div className="col-lg-3 offset-1 col-md-6 col-sm-12 footer_socials_links">
-                    <div className="row no-gutters">
-                        <div className="col-lg-2 col-md-4 col-sm-4 links socials_links_fb">
-                            <a href="#home" className="social_links"><i className="fab fa-facebook-f fa-2x"></i></a>
-                        </div>
-                        <div className="col-lg-2 col-md-4 col-sm-4 links socials_links_twitter">
-                            <a href="#home" className="social_links"><i className="fab fa-twitter fa-2x"></i></a>
-                        </div>
-                        <div className="col-lg-2 col-md-4 col-sm-4 links socials_links_in">
-                            <a href="#home" className="social_links"><i className="fab fa-linkedin-in fa-2x"></i></a>
-                        </div>
-                    </div>
-                </div>
+                </a>
+            </div>
+            <div className="col-md-6 col-xs-1 my-auto text-center">
+                <a href="CGV" className="links mx-3">CGV</a>
+                <a href="legal-notice" className="links mx-3">Mentions Légales</a>
+                <a href="partenaires" className="links mx-3">Partenaires</a>
+            </div>
+            <div className="col-md-3 col-xs-1 my-auto text-lg-right text-center py-3 py-lg-0 pr-lg-4">
+                <a href="https://www.facebook.com/BonjourPlus">
+                    <img src="../../images/icons/facebook.png" alt="facebook" className="social-media mx-2"/>
+                </a>
+                <a href="https://twitter.com/bonjourplus">
+                    <img src="../../images/icons/twitter.png" alt="twitter" className="social-media mx-2"/>
+                </a>
+                <a href="https://www.linkedin.com/company/bonjourplus">
+                    <img src="../../images/icons/linkedin.png" alt="linkedin" className="social-media mx-2"/>
+                </a>
             </div>
         </footer>
     );
