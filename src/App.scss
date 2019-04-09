@@ -1,5 +1,7 @@
 /* GENERAL */
 $bottomColor: rgb(42, 41, 41);
+$orange: #FF9800;
+$darkGrey: #262626;
 
 
 @font-face {
@@ -53,8 +55,8 @@ p {
   margin-top: 2%;
   z-index: 5;
   font-family: "BrandonText-Regular";
-  background-color: orange;
-  border: 0 solid black;
+  background-color: $orange;
+  border: none;
   padding: 7pt 10pt;
   margin-bottom: 30px;
   color: white;
@@ -63,7 +65,7 @@ p {
   font-size: 1.8em;
 
   &:hover {
-    background-color: darkorange;
+    background-color: lighten($orange, 5%);
     text-decoration-line: none;
     color: white;
   }
@@ -95,7 +97,7 @@ p {
 
     &:hover {
       text-decoration: none;
-      color: orange !important;
+      color: $orange !important;
     }
   }
 }
@@ -166,11 +168,11 @@ p {
   }
 
   .pricing_card {
-
     width: 300px;
     height: 500px;
     border-radius: 0;
-    background-color: darkorange;
+    border: none;
+    background-color: $darkGrey;
     color: white;
     transition: transform .3s;
 
@@ -188,6 +190,10 @@ p {
       border-radius: 0;
     }
 
+    h3 {
+      color: $orange;
+    }
+
     .pricing {
       font-size: 4rem;
       font-weight: bold;
@@ -195,28 +201,28 @@ p {
     }
 
     .subscription {
-      font-size: 2em;
+      font-size: 1.6em;
     }
 
     .fonction {
       margin-top: 40px;
 
       .presentation {
-        font-size: 1.3rem;
-        line-height: 1em;
-        margin-left: 20px;
+        font-size: 1rem;
+        line-height: 0.5em;
       }
     }
 
     .plus {
       margin-top: 70px;
+
       a {
         font-size: 3rem;
         text-decoration: none;
-        color: white;
+        color: $orange;
 
         &:hover {
-          font-size: 3.4rem;
+          color: lighten($orange, 10%);
         }
       }
     }
@@ -232,8 +238,8 @@ p {
                     top,
                     transparent 0%,
                     transparent 10%,
-                    orange 10%,
-                    orange 90%,
+                    $orange 10%,
+                    $orange 90%,
                     $bottomColor 90%,
                     $bottomColor 100%
     );
@@ -283,7 +289,7 @@ p {
   }
 
   .errorMessage {
-    color: orange;
+    color: $orange;
   }
 }
 
@@ -299,7 +305,7 @@ footer {
 
   .links {
     a:hover {
-      color: orange !important;
+      color: $orange !important;
     }
   }
 
