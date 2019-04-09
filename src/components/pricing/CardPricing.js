@@ -23,7 +23,7 @@ const CardPricing = (props) => {
 
 const OrderPricing = (props) => {
     return (
-        <div className="plus text-center mt-4">
+        <div className="plus text-center">
             <a href="#contact" onClick={ () => {
                 document.getElementById('message').value = props.message;
                 } }>+</a>

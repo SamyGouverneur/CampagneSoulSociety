@@ -6,7 +6,7 @@ const Concept = () => {
             <div className="container my-auto">
                 <div className="row justify-content-center concept">
                     <div className="col-lg-6 col-md-12 col-sm-12 my-auto mx-auto text-center">
-                        <img alt="plaque" src="../../images/plaque_ombre.png" className="plaque"/>
+                        <img alt="plaque" src="../../images/plaque.png" className="plaque img-fluid"/>
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12 concept_text my-auto">
                         <h2>Restez joignables, où que vous soyez...</h2>
