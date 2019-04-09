@@ -1,7 +1,6 @@
 import React from 'react';
 
-const CardPricing = (props) => {
-
+const CardPricing = props => {
     return (
         <div className="col-lg-4 col-sm-12 section_pricing">
             <div className="card pricing_card mt-3">
@@ -14,19 +13,19 @@ const CardPricing = (props) => {
                         <p className="presentation">{props.equipment}</p>
                         <p className="presentation">{props.details}</p>
                     </div>
-                    <OrderPricing message={props.message} />
+                    <OrderPricing message={props.message}/>
                 </div>
             </div>
         </div>
     );
 };
 
-const OrderPricing = (props) => {
+const OrderPricing = props => {
     return (
         <div className="plus text-center">
-            <a href="#contact" onClick={ () => {
+            <a href="#contact" onClick={() => {
                 document.getElementById('message').value = props.message;
-                } }>+</a>
+            }}>+</a>
         </div>
     );
 };

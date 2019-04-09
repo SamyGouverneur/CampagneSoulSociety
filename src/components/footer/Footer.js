@@ -19,18 +19,19 @@ const Footer = () => {
                 <div className="col-lg-3 offset-1 col-md-6 col-sm-12 footer_socials_links">
                     <div className="row no-gutters">
                         <div className="col-lg-2 col-md-4 col-sm-4 links socials_links_fb">
-                            <a href="#" className="social_links"><i className="fab fa-facebook-f fa-2x"></i></a>
+                            <a href="#home" className="social_links"><i className="fab fa-facebook-f fa-2x"></i></a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-4 links socials_links_twitter">
-                            <a href="#" className="social_links"><i className="fab fa-twitter fa-2x"></i></a>
+                            <a href="#home" className="social_links"><i className="fab fa-twitter fa-2x"></i></a>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-4 links socials_links_in">
-                            <a href="#" className="social_links"><i className="fab fa-linkedin-in fa-2x"></i></a>
+                            <a href="#home" className="social_links"><i className="fab fa-linkedin-in fa-2x"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
     );
-}
+};
+
 export default Footer;

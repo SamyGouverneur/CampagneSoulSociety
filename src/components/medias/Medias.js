@@ -2,7 +2,6 @@ import React from 'react'
 
 const Medias = () => {
     return (
-
         <div id="medias">
             <div className="bg_gradient">
                 <Speakers/>
@@ -10,7 +9,7 @@ const Medias = () => {
             </div>
         </div>
     )
-}
+};
 
 const Speakers = () => {
     return (
@@ -20,27 +19,27 @@ const Speakers = () => {
                 <p>Youpiiiiiiiiiiiii iiiiiii !</p>
                 <div className="row mt-4">
                     <div className="col-xs-12 col-md-4 text-center">
-                        <img src="/images/france3.jpg"/>
+                        <img src="/images/france3.jpg" alt="logo france3"/>
                     </div>
                     <div className="col-xs-12 col-md-4 text-center">
-                        <img src="/images/la_rep.jpg"/>
+                        <img src="/images/la_rep.jpg" alt="logo la république du centre"/>
                     </div>
                     <div className="col-xs-12 col-md-4 text-center">
-                        <img src="/images/la_tribune.jpg"/>
+                        <img src="/images/la_tribune.jpg" alt="logo la tribune"/>
                     </div>
                 </div>
                 <div className="row mt-4">
                     <div className="col-xs-12 col-md-4 text-center">
-                        <img src="/images/bfm.jpg"/>
+                        <img src="/images/bfm.jpg" alt="logo bfm"/>
                     </div>
                     <div className="col-xs-12 col-md-4 text-center">
-                        <img src="/images/france_bleu.jpg"/>
+                        <img src="/images/france_bleu.jpg" alt="logo france bleu"/>
                     </div>
                 </div>
             </div>
         </div>
     )
-}
+};
 
 const Prices = () => {
     return (
@@ -51,17 +50,16 @@ const Prices = () => {
                 <div className="prices_display">
                     <div className="row mt-4">
                         <div className="col-xs-12 col-lg-4 text-center my-auto">
-                            <img src="/images/startup_weekend.jpg"/>
+                            <img src="/images/startup_weekend.jpg" alt="logo startup weekend"/>
                         </div>
                         <div className="col-xs-12 col-lg-4 text-center my-auto">
-                            <img src="/images/10000_startups.jpg"/>
+                            <img src="/images/10000_startups.jpg" alt="logo 10000 startups pour changer le monde"/>
                         </div>
                         <div className="col-xs-12 col-lg-4 text-center my-auto">
-                            <img src="/images/human_tech_days.jpg"/>
+                            <img src="/images/human_tech_days.jpg" alt="logo human tech days"/>
                         </div>
                     </div>
                     <div className="row">
-
                         <div className="col-xs-12 col-lg-4 text-center my-auto">
                             <p>1er prix</p>
                             <p>Startup Weekend</p>
@@ -81,6 +79,6 @@ const Prices = () => {
             </div>
         </div>
     )
-}
+};
 
 export default Medias;

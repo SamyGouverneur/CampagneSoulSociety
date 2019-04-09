@@ -3,7 +3,6 @@ import React from 'react'
 const Home = () => {
     return (
         <div id="home" className="container-fluid bgColor d-flex align-items-center my-auto">
-
             <div className=" row no-gutters">
                 <div className="text col-sm-8 col-xl-7 my-auto">
                     <div className="row no-gutters">
@@ -19,11 +18,11 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="illustration ">
-                    <img src="/images/home_illustration.png" />
+                    <img src="/images/home_illustration.png" alt=""/>
                 </div>
             </div>
-
         </div>
     )
-}
+};
+
 export default Home;
