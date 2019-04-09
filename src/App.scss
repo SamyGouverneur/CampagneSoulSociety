@@ -36,10 +36,17 @@ h5 {
 }
 
 p {
-  z-index: 5;
-  font-size: calc(1.3em + 1vh);
-  font-family: "BrandonText-Regular";
-  line-height: 1em;
+   z-index: 5;
+   font-size: calc(1.3em + 1vh);
+   font-family: "BrandonText-Regular";
+   line-height: 1em;
+ }
+
+.logo {
+  background-color: #2D2D2D;
+  max-height: 10vh;
+  padding: 1vh 2vh;
+  min-height: 70px;
 }
 
 .button {
@@ -71,15 +78,6 @@ p {
   z-index: 20;
   width: 100%;
 
-  .navLogo {
-    background-color: rgba(255, 255, 255, .1);
-
-    .logo {
-      height: 10vh;
-      min-height: 70px;
-    }
-  }
-
   .navbar-toggler {
     margin: 10px 15px;
     float: right !important;
@@ -108,7 +106,6 @@ p {
   padding-top: 20vh;
   background: #0c0c0c;
   color: white;
-  //display: table;
   .text {
     padding-left: 10vw;
   }
@@ -151,12 +148,6 @@ p {
   }
 
   .plaque {
-  }
-}
-
-@media (max-height: 415px) {
-  #concept {
-    height: 150vh;
   }
 }
 
@@ -232,14 +223,78 @@ p {
   }
 }
 
+/* MEDIAS */
+#medias {
+  margin-top: -20vh;
+
+  .bg_gradient {
+    background: linear-gradient(
+                    top,
+                    transparent 0%,
+                    transparent 10%,
+                    orange 10%,
+                    orange 90%,
+                    $bottomColor 90%,
+                    $bottomColor 100%
+    );
+    min-height: 120vh;
+  }
+
+  #speakers,
+  #prices {
+    background-color: #fff;
+    padding: 50px 0;
+    min-height: 55vh;
+    display: flex !important;
+    align-items: center !important;
+
+    img {
+      object-fit: contain;
+      min-width: 150px;
+      min-height: 150px;
+      width: 10vw !important;
+    }
+
+  }
+
+  #prices {
+    margin-top: 10vh;
+    align-content: flex-end;
+  }
+}
+
+/* CONTACT */
+#contact {
+  color: white;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background: $bottomColor;
+
+  input,
+  textarea,
+  button {
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    border: 1px solid black;
+    padding: 15px;
+  }
+
+  .errorMessage {
+    color: orange;
+  }
+}
+
 /* FOOTER */
 footer {
   background-color: $bottomColor;
 
   img {
     background-color: #2D2D2D;
-    min-height: 10vh;
-    min-width: 10vw;
+    max-height: 10vh;
+    padding: 1vh;
   }
 
   .links {
@@ -284,6 +339,9 @@ footer {
     }
   }
 }
+
+
+/* MEDIA QUERIES */
 
 @media (min-width: 992px) and (max-width: 1090px) {
   footer {
@@ -363,115 +421,6 @@ footer {
   }
 }
 
-/* MEDIAS */
-#medias {
-  margin-top: -15vh;
-  .bg_gradient {
-    background: linear-gradient(
-                    top,
-                    transparent 0%,
-                    transparent 10%,
-                    orange 10%,
-                    orange 90%,
-                    $bottomColor 90%,
-                    $bottomColor 100%
-    );
-    min-height: 120vh;
-  }
-}
-
-#speakers,
-#prices {
-  background-color: #fff;
-  padding: 50px 0;
-  min-height: 55vh;
-  display: flex !important;
-  align-items: center !important;
-  img {
-    object-fit: contain;
-    min-width: 150px;
-    min-height: 150px;
-    width: 10vw !important;
-  }
-
-}
-
-#prices {
-  margin-top: 10vh;
-  align-content: flex-end;
-}
-
-/* CONTACT */
-#contact {
-  color: white;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  background: $bottomColor;
-
-  input,
-  textarea,
-  button {
-    width: 100%;
-  }
-
-  input,
-  textarea {
-    border: 1px solid black;
-    padding: 10px;
-  }
-
-  .errorMessage {
-    color: orange;
-  }
-}
-
-/* FOOTER */
-footer {
-  background-color: $bottomColor;
-
-  img {
-    background-color: #2D2D2D;
-    min-height: 10vh;
-    min-width: 10vw;
-  }
-
-  .footer_links {
-    .links_footer {
-      color: white;
-      text-decoration: none;
-      position: absolute;
-      top: 50%;
-    }
-  }
-
-  .footer_socials_links {
-    .social_links {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background: white;
-      position: absolute;
-      margin-top: 25px;
-    }
-
-    a {
-      color: black;
-
-      .fab {
-        position: absolute;
-      }
-
-      .fa-facebook-f {
-        margin: 6px 12px;
-      }
-
-      .fa-twitter, .fa-linkedin-in {
-        margin: 7px 8px;
-      }
-    }
-  }
-}
-
 @media (max-width: 1024px) {
   #concept,
   #pricing {
@@ -484,15 +433,22 @@ footer {
 }
 
 @media (max-width: 991px) {
-  .pricing_card {
-    margin-left: auto;
-    margin-right: auto;
+  #pricing {
+    padding-bottom: 30vh;
+    .pricing_card {
+      margin-left: auto;
+      margin-right: auto;
     }
+  }
+
   .navbar {
     background-color: rgba(0, 0, 0, .5) !important;
   }
-  #medias {
-    margin-top: 0;
+}
+
+@media (max-height: 800px) {
+  #pricing {
+    padding-bottom: 30vh;
   }
 }
 
@@ -504,7 +460,6 @@ footer {
       right: 10vw;
 
       img {
-        //mask-image: linear-gradient(to top, rgba(0,0,0,1) 40%, rgba(0,0,0,0));
         opacity: .4;
       }
     }
@@ -541,6 +496,13 @@ footer {
     img {
       background-color: $bottomColor;
     }
+  }
+}
+
+
+@media (max-height: 415px) {
+  #concept {
+    height: 150vh;
   }
 }
 
