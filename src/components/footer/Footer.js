@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer>
-            <div className="row no-gutters">
+            <div className="row no-gutters footer">
                 <div className="col-lg-3 col-md-5 col-sm-5">
                     <img alt="Logo" src="../../images/Logo.png" className="logo"/>
                 </div>
