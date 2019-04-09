@@ -6,12 +6,13 @@ const Concept = () => {
             <div className="container my-auto">
                 <div className="row justify-content-center concept">
                     <div className="col-lg-6 col-md-12 col-sm-12 my-auto mx-auto text-center">
-                        <img alt="plaque" src="../../images/plaque.png" className="plaque img-fluid"/>
+                        <img alt="plaque" src="../../images/plaque.png" className="img-fluid"/>
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12 concept_text my-auto">
-                        <h2>Restez joignables, où que vous soyez...</h2>
+                        <h2>Restez joignable, où que vous soyez...</h2>
                         <p>Bonjour+ est un interphone connecté nouvelle génération.</p>
-                        <p>Le plus fin au monde, le meilleur rapport qualité/prix et plein de fonctionnalités innovantes.</p>
+                        <p>Le plus fin au monde, le meilleur rapport qualité/prix et plein de fonctionnalités
+                            innovantes.</p>
                         <p>Facile à utiliser, vous n'avez qu'à le coller sur votre porte ou boîte aux lettres, et
                             télécharger l'application.</p>
                         <p>C'est tout !</p>
@@ -20,5 +21,6 @@ const Concept = () => {
             </div>
         </div>
     )
-}
+};
+
 export default Concept;
