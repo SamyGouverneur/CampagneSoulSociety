@@ -230,42 +230,52 @@ p {
 }
 
 /* MEDIAS */
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 #medias {
-  margin-top: -20vh;
-
-  .bg_gradient {
-    background: linear-gradient(
-                    top,
-                    transparent 0%,
-                    transparent 10%,
-                    $orange 10%,
-                    $orange 90%,
-                    $bottomColor 90%,
-                    $bottomColor 100%
-    );
-    min-height: 120vh;
-  }
-
-  #speakers,
-  #prices {
-    background-color: #fff;
-    padding: 50px 0;
+  margin-top: -13%;
+  background: linear-gradient(
+                  top,
+                  transparent 0%,
+                  transparent 10%,
+                  #f2f2f2 10%,
+                  #f2f2f2 90%,
+                  $bottomColor 90%,
+                  $bottomColor 100%
+  );
+    min-height: 120vh !important;
+  .medias_container {
+    background: white;
     min-height: 55vh;
-    display: flex !important;
-    align-items: center !important;
-
-    img {
-      object-fit: contain;
-      min-width: 150px;
-      min-height: 150px;
-      width: 10vw !important;
-    }
-
   }
-
+  .speakers_container {
+    padding: 50px;
+  }
+  .prices_container {
+    padding: 50px;
+  }
+  img {
+    object-fit: contain;
+    min-width: 150px;
+    min-height: 150px;
+    width: 10vw !important;
+  }
   #prices {
     margin-top: 10vh;
-    align-content: flex-end;
+  }
+  .prices_text {
+    font-size: calc(.8em + 0.8vh);
+    padding: 0;
+  }
+  .prices_logos {
+    display: flex;
+    align-items: center;
+  }
+  .prices_display {
+    min-height: 35vh;
   }
 }
 
@@ -454,7 +464,7 @@ footer {
 
 @media (max-height: 800px) {
   #pricing {
-    padding-bottom: 30vh;
+    padding-bottom: 40vh;
   }
 }
 
@@ -472,6 +482,36 @@ footer {
   }
   #prices {
     margin-top: 10px;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 850px) {
+  #medias {
+    margin-top: -20%;
+  }
+}
+
+@media (min-width: 670px ) and (max-width: 769px) {
+  #medias {
+    margin-top: -30%;
+  }
+}
+
+@media (min-width: 514px ) and (max-width: 670px) {
+  #pricing {
+    padding-bottom: 50vh;
+  }
+  #medias {
+    margin-top: -40%;
+  }
+}
+
+@media (min-width: 0px ) and (max-width: 513px) {
+  #pricing {
+    padding-bottom: 50vh;
+  }
+  #medias {
+    margin-top: -70%;
   }
 }
 
@@ -585,6 +625,14 @@ footer {
     .presentation {
       font-size:1.7rem !important;
       line-height: 1.2em !important;
+    }
+  }
+  #medias {
+    img {
+      margin-top: 20%;
+    }
+    .price_text {
+      margin-top: 15%;
     }
   }
 }
