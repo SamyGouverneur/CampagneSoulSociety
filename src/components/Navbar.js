@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div className="navLogo">
+            <div>
                 <a href="#home">
                     <img alt="Logo" src="../../images/Logo.png" className="logo"/>
                 </a>
@@ -15,11 +15,11 @@ const Navbar = () => {
             </button>
             <div className="collapse navbar-collapse justify-content-end text-right" id="navbarNavAltMarkup">
                 <ul className="navbar-nav right">
-                    <a className="nav-item nav-link my-auto mr-5" href="#concept">Concept</a>
-                    <a className="nav-item nav-link my-auto mr-5" href="#pricing">Tarifs</a>
-                    <a className="nav-item nav-link my-auto mr-5" href="#medias">Médias</a>
-                    <a className="nav-item nav-link my-auto mr-5" href="#contact">Contact</a>
-                    <a className="nav-item nav-link my-auto mr-5" href="#home">Mon compte</a>
+                    <a className="nav-item nav-link my-xs-1 my-lg-auto mr-4" href="#concept">Concept</a>
+                    <a className="nav-item nav-link my-xs-1 my-lg-auto mr-4" href="#pricing">Tarifs</a>
+                    <a className="nav-item nav-link my-xs-1 my-lg-auto mr-4" href="#medias">Médias</a>
+                    <a className="nav-item nav-link my-xs-1 my-lg-auto mr-4" href="#contact">Contact</a>
+                    <a className="nav-item nav-link my-xs-1 my-lg-auto mr-4" href="#home">Mon compte</a>
                 </ul>
             </div>
         </nav>
