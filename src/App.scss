@@ -139,7 +139,7 @@ p {
 /* CONCEPT */
 #concept {
   min-height: 100vh;
-  background-image: url("/images/background_vagues_top.jpg");
+  background-image: url("/images/backgrounds/background_vagues_top.jpg");
   background-position: bottom;
   display: flex;
   padding: 5vh 0;
@@ -153,7 +153,7 @@ p {
 /* PRICING */
 #pricing {
   min-height: 100vh;
-  background-image: url("/images/background_vagues_bottom.jpg");
+  background-image: url("/images/backgrounds/background_vagues_bottom.jpg");
   background-position: top;
 
   .row {
@@ -272,7 +272,7 @@ p {
   color: white;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  background: $bottomColor;
+  background: $darkGrey;
 
   input,
   textarea,
@@ -293,112 +293,43 @@ p {
 
 /* FOOTER */
 footer {
-  background: $bottomColor;
-  .footer {
-    display: flex;
-    align-items: center;
-  }
-  img {
-    background-color: #2D2D2D;
-    max-height: 10vh;
+  background: $darkGrey;
+
+  .logo {
+    background-color: rgba(255,255,255,.1) !important;
+    max-height: 1vh !important;
     padding: 1vh;
   }
+
+  .social-media {
+    width: 30px;
+  }
+
   .links {
-    a:hover {
+    color: white;
+    font-family: "BrandonText-Regular";
+
+    &:hover {
+      text-decoration: none;
       color: $orange !important;
     }
   }
-  .footer_links {
-    .links_footer {
-      color: white;
-      text-decoration: none;
-    }
-  }
-  .footer_socials_links {
-    .social_links {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background: white;
-      position: absolute;
-      margin-top: -25px;
-    }
-    a {
-      color: $bottomColor;
-      .fab {
-        position: absolute;
-      }
-      .fa-facebook-f {
-        margin:6px 12px;
-      }
-      .fa-twitter, .fa-linkedin-in {
-        margin:7px 8px;
-      }
-    }
-  }
+
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 320px) {
+@media (max-width: 765px) {
   footer {
-    .socials_links_fb {
-      margin-left: 120px;
-      margin-top: -70px;
-    }
-    .socials_links_twitter {
-      margin-left: 170px;
-      margin-top: -70px;
-    }
-    .socials_links_in {
-      margin-left: 220px;
-      margin-top: -70px;
+    padding-bottom: 20px;
+    .logo {
+      background-color: $darkGrey !important;
     }
   }
 }
 
 @media (max-height: 415px) {
-  #concept, #footer {
+  #concept {
     height: 150vh;
-  }
-}
-
-@media (max-width: 575px) {
-  footer {
-    padding: 5vw;
-    height: 250px;
-    .footer_links {
-      margin-left: 15px;
-      margin-top: 10px;
-      .links_footer {
-        position: initial;
-        margin-top: 15px;
-      }
-    }
-    .socials_links_fb {
-      margin-left: 160px;
-      margin-top: -70px;
-    }
-    .socials_links_twitter {
-      margin-left: 210px;
-      margin-top: -70px;
-    }
-    .socials_links_in {
-      margin-left: 260px;
-      margin-top: -70px;
-    }
-  }
-}
-
-@media (min-width: 576px) and (max-width: 991px) {
-  footer {
-    padding: 5vw;
-    height: 270px;
-    .social_links {
-      margin-top: 10% !important;
-    }
-    .cgv_link, .legal_link, .partners_link {
-      text-align: center;
-    }
   }
 }
 
@@ -425,16 +356,6 @@ footer {
   }
 }
 
-@media (min-width: 991px) {
-  footer {
-    .footer_socials_links {
-      .socials_links_fb, .socials_links_twitter, .socials_links_in {
-        padding-right: 60px;
-      }
-    }
-  }
-}
-
 @media (max-width: 991px) {
   #pricing {
     padding-bottom: 30vh;
@@ -449,12 +370,6 @@ footer {
   .prices_display {
     display: flex !important;
     flex-direction: row !important;
-  }
-
-  footer {
-    img {
-      background-color: $bottomColor !important;
-    }
   }
 }
 
@@ -493,33 +408,5 @@ footer {
       font-size:1.7rem !important;
       line-height: 1.2em !important;
     }
-  }
-  .footer_links {
-    display: flex !important;
-    align-items: center !important;
-    font-size: 2.4em !important;
-  }
-  .social_links {
-    width: 90px !important;
-    height: 90px !important;
-    margin-top: -50px !important;
-    margin-left: 250px !important;
-    font-size: 2.2em !important;
-    padding: 0 !important;
-    .fab {
-      position: absolute !important;
-    }
-    .fa-facebook-f {
-      margin: 10px 22px !important;
-    }
-    .fa-twitter {
-      margin: 12px 12px !important;
-    }
-    .fa-linkedin-in {
-      margin: 12px 14px !important;
-    }
-  }
-  .links {
-    justify-content: center !important;
   }
 }
