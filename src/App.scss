@@ -15,10 +15,9 @@ $darkGrey: #262626;
 }
 
 h1 {
-  font-size: calc(3em + 2vh);
+  font-size: calc(1.5rem + 2.5vw);
   font-family: "BrandonGrotesque-Bold";
   z-index: 5;
-  line-height: 1em;
 }
 
 h2 {
@@ -37,17 +36,17 @@ h5 {
 }
 
 p {
-   z-index: 5;
-   font-size: calc(1.3em + 1vh);
-   font-family: "BrandonText-Regular";
-   line-height: 1em;
- }
+  z-index: 5;
+  font-size: calc(1rem + 1vw);
+  font-family: "BrandonText-Regular";
+  line-height: 1em;
+}
 
 .logo {
   background-color: #2D2D2D;
-  max-height: 10vh;
-  padding: 1vh 2vh;
-  min-height: 70px;
+  padding: 10px 30px;
+  width: 180px;
+  background-color: rgba(255, 255, 255, .1) !important;
 }
 
 .button {
@@ -60,8 +59,7 @@ p {
   margin-bottom: 30px;
   color: white;
   text-decoration-line: none;
-  min-width: 150px;
-  font-size: 1.8em;
+  font-size: 1.5em;
 
   &:hover {
     background-color: lighten($orange, 5%);
@@ -72,7 +70,7 @@ p {
 
 /* NAVBAR */
 .navbar-dark {
-  background-color: rgba(0,0,0,0) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .navbar {
@@ -82,14 +80,6 @@ p {
   z-index: 20;
   width: 100%;
 
-  .navLogo {
-    img {
-      background-color: rgba(255,255,255,.1) !important;
-      max-height: 1vh !important;
-      padding: 1vh;
-    }
-  }
-
   .navbar-toggler {
     margin: 10px 15px;
     float: right !important;
@@ -97,7 +87,7 @@ p {
     color: white;
 
     &:focus {
-      outline:0px !important;
+      outline: 0px !important;
     }
   }
 
@@ -120,7 +110,7 @@ p {
 /* HOME */
 #home {
   min-height: 100vh;
-  padding-top: 20vh;
+  padding-top: 10vh;
   background: #0c0c0c;
   color: white;
 
@@ -134,14 +124,19 @@ p {
     max-width: 100vw;
   }
 
+  h1 {
+    padding-right: 30px;
+  }
+
   p {
     margin-top: .5em;
+    padding-right: 30px;
   }
 
   .illustration {
     position: absolute;
     top: 0;
-    right: 10vw;
+    right: 5vw;
 
     img {
       max-height: 100vh;
@@ -311,12 +306,6 @@ p {
 footer {
   background: $darkGrey;
 
-  .logo {
-    background-color: rgba(255,255,255,.1) !important;
-    max-height: 1vh !important;
-    padding: 1vh;
-  }
-
   .social-media {
     width: 30px;
   }
@@ -335,8 +324,32 @@ footer {
 
 /* MEDIA QUERIES */
 @media (max-width: 765px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: end;
+
+    .navbar-nav {
+      background-color: rgba($darkGrey, .9);
+      padding-left: 30px !important;
+    }
+  }
+  #home {
+    .text {
+      margin-top: 10vh;
+    }
+
+    .illustration {
+      right: 1vw !important;
+
+      img {
+        opacity: .8;
+      }
+    }
+  }
+
   footer {
     padding-bottom: 20px;
+
     .logo {
       background-color: $darkGrey !important;
     }
@@ -358,12 +371,10 @@ footer {
 @media (max-width: 850px) {
   #home {
     .illustration {
-      position: absolute;
-      top: 0;
-      right: 10vw;
+      top: 50px;
 
       img {
-        opacity: .4;
+        opacity: .8;
       }
     }
   }
@@ -373,8 +384,24 @@ footer {
 }
 
 @media (max-width: 991px) {
+  .navbar-collapse {
+    justify-content: start;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0) !important;
+
+    .navbar-nav {
+      background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+      background-color: rgba(0,0,0,0) !important;
+      padding-left: 30px !important;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
   #pricing {
     padding-bottom: 30vh;
+
     .pricing_card {
       margin-left: auto;
       margin-right: auto;
@@ -398,6 +425,16 @@ footer {
   }
 }
 
+@media (min-width: 1500px) {
+  h1 {
+    font-size: 2.8vw;
+  }
+
+  p {
+    font-size: 1.5vw;
+  }
+}
+
 @media (min-width: 2580px) {
   .container {
     max-width: 55vw;
@@ -406,6 +443,7 @@ footer {
   .pricing_card {
     width: 450px !important;
     height: 650px !important;
+
     .subscription {
       font-size: 2.7em !important;
     }
@@ -419,7 +457,7 @@ footer {
     margin-top: 100px !important;
 
     .presentation {
-      font-size:1.7rem !important;
+      font-size: 1.7rem !important;
       line-height: 1.2em !important;
     }
   }
