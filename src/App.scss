@@ -15,14 +15,13 @@ $darkGrey: #262626;
 }
 
 h1 {
-  font-size: calc(3em + 2vh);
+  font-size: calc(1.5rem + 2.5vw);
   font-family: "BrandonGrotesque-Bold";
   z-index: 5;
-  line-height: 1em;
 }
 
 h2 {
-  font-size: calc(2.5em + 1vh);
+  font-size: calc(1.5em + 1vh);
   font-family: "BrandonGrotesque-Bold";
 }
 
@@ -31,24 +30,17 @@ h3 {
   font-family: "BrandonGrotesque-Bold";
 }
 
-
-h5 {
-  font-size: 20pt;
-  font-weight: bold;
-}
-
 p {
-   z-index: 5;
-   font-size: calc(1.3em + 1vh);
-   font-family: "BrandonText-Regular";
-   line-height: 1em;
- }
+  z-index: 5;
+  font-family: "BrandonText-Regular";
+  line-height: 1em;
+}
 
 .logo {
   background-color: #2D2D2D;
-  max-height: 10vh;
-  padding: 1vh 2vh;
-  min-height: 70px;
+  padding: 10px 30px;
+  width: 180px;
+  background-color: rgba(255, 255, 255, .1) !important;
 }
 
 .button {
@@ -61,8 +53,7 @@ p {
   margin-bottom: 30px;
   color: white;
   text-decoration-line: none;
-  min-width: 150px;
-  font-size: 1.8em;
+  font-size: 1.5em;
 
   &:hover {
     background-color: lighten($orange, 5%);
@@ -72,8 +63,11 @@ p {
 }
 
 /* NAVBAR */
+.navbar-dark {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
 .navbar {
-  background: transparent !important;
   position: absolute;
   top: 0;
   padding: 0;
@@ -83,6 +77,12 @@ p {
   .navbar-toggler {
     margin: 10px 15px;
     float: right !important;
+    border: none;
+    color: white;
+
+    &:focus {
+      outline: 0px !important;
+    }
   }
 
   .navbar-collapse {
@@ -91,7 +91,6 @@ p {
 
   a {
     font-family: "BrandonText-Regular";
-    font-size: calc(1em + 1vh);
     color: white !important;
     z-index: 5;
 
@@ -105,9 +104,10 @@ p {
 /* HOME */
 #home {
   min-height: 100vh;
-  padding-top: 20vh;
+  padding-top: 10vh;
   background: #0c0c0c;
   color: white;
+
   .text {
     padding-left: 10vw;
   }
@@ -118,14 +118,20 @@ p {
     max-width: 100vw;
   }
 
+  h1 {
+    padding-right: 30px;
+  }
+
   p {
     margin-top: .5em;
+    padding-right: 30px;
+    font-size: calc(1rem + 1vw);
   }
 
   .illustration {
     position: absolute;
     top: 0;
-    right: 10vw;
+    right: 5vw;
 
     img {
       max-height: 100vh;
@@ -139,7 +145,7 @@ p {
 /* CONCEPT */
 #concept {
   min-height: 100vh;
-  background-image: url("/images/background_vagues_top.jpg");
+  background-image: url("/images/backgrounds/background_vagues_top.jpg");
   background-position: bottom;
   display: flex;
   padding: 5vh 0;
@@ -148,16 +154,14 @@ p {
     margin-right: 0;
     margin-left: 0;
   }
-
-  .plaque {
-  }
 }
 
 /* PRICING */
 #pricing {
   min-height: 100vh;
-  background-image: url("/images/background_vagues_bottom.jpg");
+  background-image: url("/images/backgrounds/background_vagues_bottom.jpg");
   background-position: top;
+
   .row {
     margin-right: 0;
     margin-left: 0;
@@ -247,33 +251,41 @@ p {
                   $bottomColor 100%
   );
     min-height: 120vh !important;
+
   .medias_container {
     background: white;
     min-height: 55vh;
   }
+
   .speakers_container {
     padding: 50px;
   }
+
   .prices_container {
     padding: 50px;
   }
+
   img {
     object-fit: contain;
     min-width: 150px;
     min-height: 150px;
     width: 10vw !important;
   }
+
   #prices {
     margin-top: 10vh;
   }
+
   .prices_text {
     font-size: calc(.8em + 0.8vh);
     padding: 0;
   }
+
   .prices_logos {
     display: flex;
     align-items: center;
   }
+
   .prices_display {
     min-height: 35vh;
   }
@@ -284,18 +296,37 @@ p {
   color: white;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  background: $bottomColor;
+  background: darken($darkGrey, 5%);
+
+  form {
+    max-width: 400px;
+  }
+
+  input {
+    height: 30px;
+  }
+
+  button {
+    width: 200px;
+
+    &:focus {
+      outline: 0px !important;
+    }
+  }
 
   input,
-  textarea,
-  button {
+  textarea {
     width: 100%;
   }
 
   input,
   textarea {
-    border: 1px solid black;
+    border: none;
     padding: 15px;
+
+    &:focus {
+      outline: 0px !important;
+    }
   }
 
   .errorMessage {
@@ -305,135 +336,121 @@ p {
 
 /* FOOTER */
 footer {
-  background-color: $bottomColor;
+  background: darken($darkGrey, 5%);
 
-  img {
-    background-color: #2D2D2D;
-    max-height: 10vh;
-    padding: 1vh;
+  .logo {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .social-media {
+    width: 30px;
   }
 
   .links {
-    a:hover {
+    color: white;
+    font-family: "BrandonText-Regular";
+
+    &:hover {
+      text-decoration: none;
       color: $orange !important;
     }
   }
 
-  .footer_links {
-    .links_footer {
-      color: white;
-      text-decoration: none;
-      position: absolute;
-      top: 50%;
-    }
-  }
-
-  .footer_socials_links {
-    .social_links {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background: white;
-      position: absolute;
-      margin-top: 25px;
-    }
-
-    a {
-      color: $bottomColor !important;
-
-      .fab {
-        position: absolute;
-      }
-
-      .fa-facebook-f {
-        margin: 6px 12px;
-      }
-
-      .fa-twitter, .fa-linkedin-in {
-        margin: 7px 8px;
-      }
-    }
-  }
 }
-
 
 /* MEDIA QUERIES */
+@media (max-width: 765px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: end;
 
-@media (min-width: 992px) and (max-width: 1090px) {
-  footer {
-    .cgv_link, .legal_link, .partners_link {
-      text-align: center;
+    .navbar-nav {
+      background-color: rgba($darkGrey, .9);
+      padding-left: 30px !important;
     }
   }
-}
+  #home {
+    .text {
+      margin-top: 10vh;
+    }
 
-@media (min-width: 991px) {
-  footer {
-    .footer_socials_links {
-      .socials_links_fb, .socials_links_twitter, .socials_links_in {
-        padding-right: 60px;
+    .illustration {
+      right: 1vw !important;
+
+      img {
+        opacity: .8;
       }
     }
   }
+
+  footer {
+    padding-bottom: 20px;
+    background-color: $darkGrey !important;
+
+    .logo {
+      background-color: rgba(0, 0, 0, 0) !important;
+      position: static;
+    }
+  }
 }
+
+@media (max-height: 415px) {
+  #concept {
+    height: 150vh;
+  }
+}
+
+@media (max-height: 800px) {
+  #pricing {
+    padding-bottom: 40vh;
+  }
+}
+
+@media (max-width: 850px) {
+  #home {
+    .illustration {
+      top: 50px;
+
+      img {
+        opacity: .8;
+      }
+    }
+  }
+  #prices {
+    margin-top: 10px;
+  }
+}
+
 
 @media (max-width: 991px) {
-  footer {
-    img {
-      background-color: $bottomColor;
+  .navbar-collapse {
+    justify-content: start;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0) !important;
+
+    .navbar-nav {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+      background-color: rgba(0, 0, 0, 0) !important;
+      padding-left: 30px !important;
+      height: 100%;
+      width: 100%;
     }
   }
-}
 
-@media (min-width: 576px) and (max-width: 991px) {
-  footer {
-    padding: 5vw;
-    height: 220px;
+  #pricing {
+    padding-bottom: 30vh;
 
-    .footer_links {
-      margin-top: 30px;
-
-      .links_footer {
-        position: initial;
-        margin-top: 15px;
-      }
-    }
-
-    .cgv_link, .legal_link {
-      text-align: center;
+    .pricing_card {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
-}
 
-@media (max-width: 575px) {
-  footer {
-    padding: 5vw;
-    height: 220px;
-
-    .footer_links {
-      margin-left: 15px;
-      margin-top: 10px;
-
-      .links_footer {
-        position: initial;
-        margin-top: 15px;
-      }
-    }
-
-    .socials_links_fb {
-      margin-left: 210px;
-      margin-top: -70px;
-    }
-
-    .socials_links_twitter {
-      margin-left: 260px;
-      margin-top: -70px;
-    }
-
-    .socials_links_in {
-      margin-left: 310px;
-      margin-top: -70px;
-    }
+  .prices_display {
+    display: flex !important;
+    flex-direction: row !important;
   }
 }
 
@@ -448,159 +465,9 @@ footer {
   }
 }
 
-@media (max-width: 991px) {
-  #pricing {
-    padding-bottom: 30vh;
-    .pricing_card {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
-  .navbar {
-    background-color: rgba(0, 0, 0, .5) !important;
-  }
-}
-
-@media (max-height: 800px) {
-  #pricing {
-    padding-bottom: 40vh;
-  }
-}
-
-@media (max-width: 850px) {
-  #home {
-    .illustration {
-      position: absolute;
-      top: 0;
-      right: 10vw;
-
-      img {
-        opacity: .4;
-      }
-    }
-  }
-  #prices {
-    margin-top: 10px;
-  }
-}
-
-@media (min-width: 770px) and (max-width: 850px) {
-  #medias {
-    margin-top: -20%;
-  }
-}
-
-@media (min-width: 670px ) and (max-width: 769px) {
-  #medias {
-    margin-top: -30%;
-  }
-}
-
-@media (min-width: 514px ) and (max-width: 670px) {
-  #pricing {
-    padding-bottom: 50vh;
-  }
-  #medias {
-    margin-top: -40%;
-  }
-}
-
-@media (min-width: 0px ) and (max-width: 513px) {
-  #pricing {
-    padding-bottom: 50vh;
-  }
-  #medias {
-    margin-top: -70%;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1090px) {
-  footer {
-    .cgv_link, .legal_link, .partners_link {
-      text-align: center;
-    }
-  }
-}
-
-@media (min-width: 991px) {
-  footer {
-    .footer_socials_links {
-      .socials_links_fb, .socials_links_twitter, .socials_links_in {
-        padding-right: 60px;
-      }
-    }
-  }
-}
-
-@media (max-width: 991px) {
-  .prices_display {
-    display: flex !important;
-    flex-direction: row !important;
-  }
-  footer {
-    img {
-      background-color: $bottomColor;
-    }
-  }
-}
-
-
-@media (max-height: 415px) {
-  #concept {
-    height: 150vh;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 991px) {
-  footer {
-    padding: 5vw;
-    height: 220px;
-
-    .footer_links {
-      margin-top: 30px;
-
-      .links_footer {
-        position: initial;
-        margin-top: 15px;
-      }
-    }
-
-    .cgv_link, .legal_link {
-      text-align: center;
-    }
-  }
-}
-
-@media (max-width: 575px) {
-  footer {
-    padding: 5vw;
-    height: 220px;
-
-    .footer_links {
-      margin-left: 15px;
-      margin-top: 10px;
-
-      .links_footer {
-        position: initial;
-        margin-top: 15px;
-      }
-    }
-
-    .socials_links_fb {
-      margin-left: 150px;
-      margin-top: -70px;
-    }
-
-    .socials_links_twitter {
-      margin-left: 200px;
-      margin-top: -70px;
-    }
-
-    .socials_links_in {
-      margin-left: 250px;
-      margin-top: -70px;
-    }
+@media (min-width: 1500px) {
+  h1 {
+    font-size: 2.8vw;
   }
 }
 
@@ -608,13 +475,16 @@ footer {
   .container {
     max-width: 55vw;
   }
+
   .pricing_card {
     width: 450px !important;
     height: 650px !important;
+
     .subscription {
       font-size: 2.7em !important;
     }
   }
+
   .pricing {
     font-size: 5rem !important;
   }
@@ -623,7 +493,7 @@ footer {
     margin-top: 100px !important;
 
     .presentation {
-      font-size:1.7rem !important;
+      font-size: 1.7rem !important;
       line-height: 1.2em !important;
     }
   }
