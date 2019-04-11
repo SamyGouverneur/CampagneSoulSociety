@@ -54,35 +54,33 @@ export default class Contact extends Component {
 
     render() {
         return (
-            <div>
-                <div id="contact">
-                    <div className="col-md-8 offset-md-2 my-auto">
-                        <h2>Contact</h2>
-                        <p>Formulaire de contact. Chouette.</p>
-                        <div className="contact_form justify-content-center">
-                            <form onSubmit={this.handleSubmit} className="col-md-6 offset-md-3 mt-5">
-                                <div className="row no-gutters errorMessage">{this.state.errorName}</div>
-                                <div className="form-group row no-gutters">
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        placeholder="Nom"
-                                        onChange={this.handleChange}
-                                        value={this.state.name}
-                                    />
-                                </div>
-                                <div className="row no-gutters errorMessage">{this.state.errorEmail}</div>
-                                <div className="form-group row no-gutters">
-                                    <input
-                                        type="text"
-                                        name="email"
-                                        placeholder="Email"
-                                        onChange={this.handleChange}
-                                        value={this.state.email}
-                                    />
-                                </div>
-                                <div className="row no-gutters errorMessage">{this.state.errorMessage}</div>
-                                <div className="form-group row no-gutters">
+            <div id="contact">
+                <div className="col my-auto">
+                    <h2 className="text-center">Contact</h2>
+                    <p className="text-center mb-5">Formulaire de contact. Chouette.</p>
+                    <form onSubmit={this.handleSubmit} className="mx-auto">
+                        <div className="row no-gutters errorMessage">{this.state.errorName}</div>
+                        <div className="row form-group no-gutters">
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Nom"
+                                onChange={this.handleChange}
+                                value={this.state.name}
+                            />
+                        </div>
+                        <div className="row no-gutters errorMessage">{this.state.errorEmail}</div>
+                        <div className="row form-group no-gutters">
+                            <input
+                                type="text"
+                                name="email"
+                                placeholder="Email"
+                                onChange={this.handleChange}
+                                value={this.state.email}
+                            />
+                        </div>
+                        <div className="row no-gutters errorMessage">{this.state.errorMessage}</div>
+                        <div className="row form-group no-gutters">
                                     <textarea
                                         id="message"
                                         name="message"
@@ -91,11 +89,13 @@ export default class Contact extends Component {
                                         onChange={this.handleChange}
                                         value={this.state.message}
                                     />
-                                </div>
-                                <button className="button" type="submit" value="submit">Envoyer</button>
-                            </form>
                         </div>
-                    </div>
+                        <div className="row">
+                            <div className="col text-center">
+                                <button className="button" type="submit" value="submit">Envoyer</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         )

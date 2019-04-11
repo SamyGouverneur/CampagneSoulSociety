@@ -3,17 +3,17 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className="row no-gutters footer d-lg-flex justify-content-lg-between">
-            <div className="col-md-3 col-xs-1 d-md-flex text-center">
+            <div className="col-md-3 col-xs-1 d-md-flex text-center py-2 py-lg-0 pr-lg-4 ">
                 <a href="#home">
                     <img alt="Logo" src="../../images/Logo.png" className="logo"/>
                 </a>
             </div>
-            <div className="col-md-6 col-xs-1 my-auto text-center">
+            <div className="col-md-6 col-xs-1 my-auto py-4 pr-lg-4 text-center">
                 <a href="CGV" className="links mx-3">CGV</a>
                 <a href="legal-notice" className="links mx-3">Mentions Légales</a>
                 <a href="partenaires" className="links mx-3">Partenaires</a>
             </div>
-            <div className="col-md-3 col-xs-1 my-auto text-lg-right text-center py-3 py-lg-0 pr-lg-4">
+            <div className="col-md-3 col-xs-1 my-auto text-lg-right text-center py-4 py-lg-0 pr-lg-4">
                 <a href="https://www.facebook.com/BonjourPlus">
                     <img src="../../images/icons/facebook.png" alt="facebook" className="social-media mx-2"/>
                 </a>
