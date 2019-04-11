@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-  font-size: calc(2.5em + 1vh);
+  font-size: calc(1.5em + 1vh);
   font-family: "BrandonGrotesque-Bold";
 }
 
@@ -30,14 +30,8 @@ h3 {
   font-family: "BrandonGrotesque-Bold";
 }
 
-h5 {
-  font-size: 20pt;
-  font-weight: bold;
-}
-
 p {
   z-index: 5;
-  font-size: calc(1rem + 1vw);
   font-family: "BrandonText-Regular";
   line-height: 1em;
 }
@@ -131,6 +125,7 @@ p {
   p {
     margin-top: .5em;
     padding-right: 30px;
+    font-size: calc(1rem + 1vw);
   }
 
   .illustration {
@@ -255,8 +250,7 @@ p {
     min-height: 120vh;
   }
 
-  #speakers,
-  #prices {
+  #speakers, #prices {
     background-color: #fff;
     padding: 50px 0;
     min-height: 55vh;
@@ -283,18 +277,36 @@ p {
   color: white;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  background: $darkGrey;
+  background: darken($darkGrey, 5%);
+
+  form {
+    max-width: 400px;
+  }
+
+  input {
+    height: 30px;
+  }
+
+  button {
+    width: 200px;
+    &:focus {
+      outline: 0px !important;
+    }
+  }
 
   input,
-  textarea,
-  button {
+  textarea {
     width: 100%;
   }
 
   input,
   textarea {
-    border: 1px solid black;
+    border: none;
     padding: 15px;
+
+    &:focus {
+      outline: 0px !important;
+    }
   }
 
   .errorMessage {
@@ -304,7 +316,12 @@ p {
 
 /* FOOTER */
 footer {
-  background: $darkGrey;
+  background: darken($darkGrey, 5%);
+
+  .logo {
+    position: absolute;
+    bottom: 0;
+  }
 
   .social-media {
     width: 30px;
@@ -349,9 +366,11 @@ footer {
 
   footer {
     padding-bottom: 20px;
+    background-color: $darkGrey !important;
 
     .logo {
-      background-color: $darkGrey !important;
+      background-color: rgba(0,0,0,0) !important;
+      position: static;
     }
   }
 }
@@ -428,10 +447,6 @@ footer {
 @media (min-width: 1500px) {
   h1 {
     font-size: 2.8vw;
-  }
-
-  p {
-    font-size: 1.5vw;
   }
 }
 
