@@ -20,8 +20,10 @@ class App extends Component {
                     <Navbar/>
                     <Home/>
                     <div className="all_sections">
-                        <Concept/>
-                        <Pricing/>
+                        <div id="background">
+                            <Concept/>
+                            <Pricing/>
+                        </div>
                         <Medias/>
                         <Contact/>
                     </div>
