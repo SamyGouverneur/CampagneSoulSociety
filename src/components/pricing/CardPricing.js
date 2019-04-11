@@ -2,7 +2,7 @@ import React from 'react';
 
 const CardPricing = props => {
     return (
-        <div className="col-lg-4 col-sm-12 section_pricing">
+        <div className="col-lg-4 section_pricing">
             <div className="card pricing_card mt-3">
                 <div className="card-body">
                     <h3 className="format text-center mt-3">{props.format}</h3>
