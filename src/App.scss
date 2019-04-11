@@ -234,41 +234,60 @@ p {
 }
 
 /* MEDIAS */
-#medias {
-  margin-top: -20vh;
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 
-  .bg_gradient {
-    background: linear-gradient(
-                    top,
-                    transparent 0%,
-                    transparent 10%,
-                    $orange 10%,
-                    $orange 90%,
-                    $bottomColor 90%,
-                    $bottomColor 100%
-    );
-    min-height: 120vh;
+#medias {
+  margin-top: -13%;
+  background: linear-gradient(
+                  top,
+                  transparent 0%,
+                  transparent 10%,
+                  #f2f2f2 10%,
+                  #f2f2f2 90%,
+                  $bottomColor 90%,
+                  $bottomColor 100%
+  );
+    min-height: 120vh !important;
+
+  .medias_container {
+    background: white;
+    min-height: 55vh;
   }
 
-  #speakers, #prices {
-    background-color: #fff;
-    padding: 50px 0;
-    min-height: 55vh;
-    display: flex !important;
-    align-items: center !important;
+  .speakers_container {
+    padding: 50px;
+  }
 
-    img {
-      object-fit: contain;
-      min-width: 150px;
-      min-height: 150px;
-      width: 10vw !important;
-    }
+  .prices_container {
+    padding: 50px;
+  }
 
+  img {
+    object-fit: contain;
+    min-width: 150px;
+    min-height: 150px;
+    width: 10vw !important;
   }
 
   #prices {
     margin-top: 10vh;
-    align-content: flex-end;
+  }
+
+  .prices_text {
+    font-size: calc(.8em + 0.8vh);
+    padding: 0;
+  }
+
+  .prices_logos {
+    display: flex;
+    align-items: center;
+  }
+
+  .prices_display {
+    min-height: 35vh;
   }
 }
 
@@ -384,7 +403,7 @@ footer {
 
 @media (max-height: 800px) {
   #pricing {
-    padding-bottom: 30vh;
+    padding-bottom: 40vh;
   }
 }
 
@@ -402,6 +421,7 @@ footer {
     margin-top: 10px;
   }
 }
+
 
 @media (max-width: 991px) {
   .navbar-collapse {
@@ -475,6 +495,14 @@ footer {
     .presentation {
       font-size: 1.7rem !important;
       line-height: 1.2em !important;
+    }
+  }
+  #medias {
+    img {
+      margin-top: 20%;
+    }
+    .price_text {
+      margin-top: 15%;
     }
   }
 }
