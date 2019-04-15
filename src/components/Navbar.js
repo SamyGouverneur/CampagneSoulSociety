@@ -14,13 +14,13 @@ const Navbar = () => {
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse justify-content-end text-right" id="navbarNavAltMarkup">
-                <ul className="navbar-nav right">
+                <div id="navbar" className="navbar-nav right topBotomBordersOut">
                     <a className="nav-item nav-link my-xs-1 my-lg-auto mr-4" href="#concept">Concept</a>
                     <a className="nav-item nav-link my-xs-1 my-lg-auto mr-4" href="#pricing">Tarifs</a>
                     <a className="nav-item nav-link my-xs-1 my-lg-auto mr-4" href="#medias">Médias</a>
                     <a className="nav-item nav-link my-xs-1 my-lg-auto mr-4" href="#contact">Contact</a>
                     <a className="nav-item nav-link my-xs-1 my-lg-auto mr-4" href="#home">Mon compte</a>
-                </ul>
+                </div>
             </div>
         </nav>
     );
