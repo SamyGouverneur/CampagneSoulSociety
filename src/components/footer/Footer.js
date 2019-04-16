@@ -8,19 +8,19 @@ const Footer = () => {
                     <img alt="Logo" src="../../images/Logo.png" className="logo"/>
                 </a>
             </div>
-            <div className="col-md-6 col-xs-1 my-auto py-4 pr-lg-4 text-center">
+            <div className="col-md-6 col-xs-1 my-auto py-4 pr-lg-4 text-center bottomBorder">
                 <a href="CGV" className="links mx-3">CGV</a>
                 <a href="legal-notice" className="links mx-3">Mentions Légales</a>
                 <a href="partenaires" className="links mx-3">Partenaires</a>
             </div>
             <div className="col-md-3 col-xs-1 my-auto text-lg-right text-center py-4 py-lg-0 pr-lg-4">
-                <a href="https://www.facebook.com/BonjourPlus">
+                <a href="https://www.facebook.com/BonjourPlus" target="_blank">
                     <img src="../../images/icons/facebook.png" alt="facebook" className="social-media mx-2"/>
                 </a>
-                <a href="https://twitter.com/bonjourplus">
+                <a href="https://twitter.com/bonjourplus" target="_blank">
                     <img src="../../images/icons/twitter.png" alt="twitter" className="social-media mx-2"/>
                 </a>
-                <a href="https://www.linkedin.com/company/bonjourplus">
+                <a href="https://www.linkedin.com/company/bonjourplus" target="_blank">
                     <img src="../../images/icons/linkedin.png" alt="linkedin" className="social-media mx-2"/>
                 </a>
             </div>

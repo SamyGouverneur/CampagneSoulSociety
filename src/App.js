@@ -11,6 +11,7 @@ import Contact from './components/contact/Contact';
 import Pricing from './components/pricing/Pricing';
 import Medias from './components/medias/Medias';
 import Footer from './components/footer/Footer';
+import BackArrow from './components/BackArrow';
 
 class App extends Component {
     render() {
@@ -26,6 +27,7 @@ class App extends Component {
                         </div>
                         <Medias/>
                         <Contact/>
+                        <BackArrow/>
                     </div>
                     <Footer/>
                 </div>
