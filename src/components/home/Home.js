@@ -3,7 +3,7 @@ import React from 'react'
 const Home = () => {
     return (
         <div id="home" className="container-fluid bgColor d-flex align-items-md-center">
-            <div className="row">
+            <div className="row m-0 px-5">
                 <div className="text col-sm-8 col-xl-7">
                     <div className="row no-gutters">
                         <h1>L'interphone nouvelle génération

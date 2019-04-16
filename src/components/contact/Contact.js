@@ -54,11 +54,11 @@ export default class Contact extends Component {
 
     render() {
         return (
-            <div id="contact">
-                <div className="col my-auto">
-                    <h2 className="text-center">Contact</h2>
+            <div id="contact" className="pt-5">
+                <div className="col py-5 mt-5">
+                    <h2 className="text-center mt-5">Contact</h2>
                     <p className="text-center mb-5">Formulaire de contact. Chouette.</p>
-                    <form onSubmit={this.handleSubmit} className="mx-auto">
+                    <form onSubmit={this.handleSubmit} className="mx-auto mb-5">
                         <div className="row no-gutters errorMessage">{this.state.errorName}</div>
                         <div className="row form-group no-gutters">
                             <input

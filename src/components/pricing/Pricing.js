@@ -3,14 +3,14 @@ import CardPricing from './CardPricing'
 
 const Pricing = () => {
     return (
-        <div id="pricing" className="container-fluid">
-            <div className="container">
-                <div className="row">
-                    <div className="text col-12">
-                        <div className="row">
+        <div id="pricing" className="container-fluid pb-5">
+            <div className="container mb-5">
+                <div className="row mx-0 pb-5">
+                    <div className="mb-5 col-12">
+                        <div className="row mx-0 d-flex justify-content-center">
                             <h2>Tarifs</h2>
                         </div>
-                        <div className="row">
+                        <div className="row mx-0 d-flex justify-content-center">
                             <p>Les offres seront bientôt disponibles !</p>
                         </div>
                     </div>

@@ -94,6 +94,11 @@ a#backArrow.visible{
   opacity:1;
 }
 
+#background {
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
 
 /* NAVBAR */
 .navbar-dark {
@@ -144,10 +149,6 @@ html {
   background: #0c0c0c;
   color: white;
 
-  .text {
-    padding-left: 10vw;
-  }
-
   .bgColor {
     padding: 0 7vw;
     background: linear-gradient(rgba(0, 0, 0, .6), transparent);
@@ -180,11 +181,9 @@ html {
 
 /* CONCEPT */
 #concept {
-  min-height: 100vh;
-  background-image: url("/images/backgrounds/background_vagues_top.jpg");
-  background-position: bottom;
-  display: flex;
-  padding: 5vh 0;
+  .plaque {
+    margin-left: -2vw;
+  }
 
   .row {
     margin-right: 0;
@@ -194,21 +193,7 @@ html {
 
 /* PRICING */
 #pricing {
-  min-height: 100vh;
-  background-image: url("/images/backgrounds/background_vagues_bottom.jpg");
-  background-position: top;
-
-  .row {
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .text {
-    margin-bottom: 3vh;
-  }
-
   .pricing_card {
-    width: 300px;
     height: 500px;
     border-radius: 0;
     border: none;
@@ -276,62 +261,23 @@ html {
 }
 
 #medias {
-  margin-top: -13%;
-  background: linear-gradient(
-                  top,
-                  transparent 0%,
-                  transparent 10%,
-                  #f2f2f2 10%,
-                  #f2f2f2 90%,
-                  $bottomColor 90%,
-                  $bottomColor 100%
-  );
-    min-height: 120vh !important;
+  background: lighten($darkGrey, 75%);
 
-  .medias_container {
+  .container {
     background: white;
-    min-height: 55vh;
-  }
-
-  .speakers_container {
-    padding: 50px;
-  }
-
-  .prices_container {
-    padding: 50px;
+    position: relative;
+    bottom: -100px;
   }
 
   img {
+    width: 150px;
     object-fit: contain;
-    min-width: 150px;
-    min-height: 150px;
-    width: 10vw !important;
-  }
-
-  #prices {
-    margin-top: 10vh;
-  }
-
-  .prices_text {
-    font-size: calc(.8em + 0.8vh);
-    padding: 0;
-  }
-
-  .prices_logos {
-    display: flex;
-    align-items: center;
-  }
-
-  .prices_display {
-    min-height: 35vh;
   }
 }
 
 /* CONTACT */
 #contact {
   color: white;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
   background: darken($darkGrey, 5%);
 
   form {
@@ -443,6 +389,14 @@ footer {
         opacity: .8;
       }
     }
+  }
+
+  .pricing_card {
+    width: 100% !important;
+  }
+
+  .plaque {
+    margin-left: 0 !important;
   }
 
   footer {
@@ -569,6 +523,7 @@ footer {
     .pricing_card {
       margin-left: auto;
       margin-right: auto;
+      width: 50%;
     }
   }
 
