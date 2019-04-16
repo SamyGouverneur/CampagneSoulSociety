@@ -1,4 +1,6 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+import 'animate.css';
 
 export default class Contact extends Component {
 
@@ -48,7 +50,7 @@ export default class Contact extends Component {
     handleChange = event => {
         const name = event.target.name;
         const value = event.target.value;
-        this.setState({[name]: value});
+        this.setState({ [name]: value });
 
     };
 
@@ -56,8 +58,10 @@ export default class Contact extends Component {
         return (
             <div id="contact" className="pt-5">
                 <div className="col py-5 mt-5">
-                    <h2 className="text-center mt-5">Contact</h2>
-                    <p className="text-center mb-5">Formulaire de contact. Chouette.</p>
+                    <ScrollAnimation animateIn="slideInDown">
+                        <h2 className="text-center mt-5">Contact</h2>
+                        <p className="text-center mb-5">Formulaire de contact. Chouette.</p>
+                    </ScrollAnimation>
                     <form onSubmit={this.handleSubmit} className="mx-auto mb-5">
                         <div className="row no-gutters errorMessage">{this.state.errorName}</div>
                         <div className="row form-group no-gutters">
@@ -81,14 +85,14 @@ export default class Contact extends Component {
                         </div>
                         <div className="row no-gutters errorMessage">{this.state.errorMessage}</div>
                         <div className="row form-group no-gutters">
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        placeholder="Message"
-                                        rows="10"
-                                        onChange={this.handleChange}
-                                        value={this.state.message}
-                                    />
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Message"
+                                rows="10"
+                                onChange={this.handleChange}
+                                value={this.state.message}
+                            />
                         </div>
                         <div className="row">
                             <div className="col text-center">
