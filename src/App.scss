@@ -221,43 +221,70 @@ html {
     &:hover {
       border-radius: 0;
     }
+  }
 
-    h3 {
+  h3 {
+    color: $orange;
+  }
+
+  .pricing {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .subscription {
+    font-size: 1.6em;
+  }
+
+  .fonction {
+    margin-top: 40px;
+
+    .presentation {
+      font-size: 1rem;
+      line-height: 0.5em;
+    }
+  }
+
+  .plus {
+    margin-top: 70px;
+
+    a {
+      font-size: 3rem;
+      text-decoration: none;
       color: $orange;
-    }
 
-    .pricing {
-      font-size: 4rem;
-      font-weight: bold;
+      &:hover {
+        color: lighten($orange, 10%);
+      }
+    }
+  }
+
+  .tabs-buttons {
+    background: $darkGrey;
+    color: white;
+    cursor: pointer;
+
+    .tab-link {
       margin: 0;
+      padding-top: 25px;
+      padding-bottom: 20px;
+      border-bottom: solid 3px lighten($darkGrey, 20%);
+      font-family: "BrandonGrotesque-Bold";
     }
 
-    .subscription {
-      font-size: 1.6em;
+    .active {
+      border-bottom: solid 3px $orange;
     }
+  }
 
-    .fonction {
-      margin-top: 40px;
+  .tab-fonction {
+    margin-bottom: -20px;
+  }
 
-      .presentation {
-        font-size: 1rem;
-        line-height: 0.5em;
-      }
-    }
-
-    .plus {
-      margin-top: 70px;
-
-      a {
-        font-size: 3rem;
-        text-decoration: none;
-        color: $orange;
-
-        &:hover {
-          color: lighten($orange, 10%);
-        }
-      }
-    }
+  .pricing-tab {
+    background: $darkGrey;
+    color: white;
   }
 }
 
@@ -347,8 +374,7 @@ footer {
     cursor: pointer;
   }
 
-  div.bottomBorder a:after
-  {
+  div.bottomBorder a:after {
     position: absolute;
     left: 0px;
     width: 100%;
@@ -359,14 +385,12 @@ footer {
     transition: all 0.3s;
   }
 
-  div.bottomBorder a:after
-  {
+  div.bottomBorder a:after {
     bottom: -10px;
     transform: translateY(-10px);
   }
 
-  div.bottomBorder a:hover:after
-  {
+  div.bottomBorder a:hover:after {
     opacity: 1;
     transform: translateY(0px);
   }
@@ -452,8 +476,7 @@ footer {
     cursor: pointer;
   }
 
-  div.topBotomBordersOut a:after
-  {
+  div.topBotomBordersOut a:after {
     position: absolute;
     left: 0px;
     width: 100%;
@@ -464,14 +487,12 @@ footer {
     transition: all 0.3s;
   }
 
-  div.topBotomBordersOut a:after
-  {
+  div.topBotomBordersOut a:after {
     bottom: 0px;
     transform: translateY(-10px);
   }
 
-  div.topBotomBordersOut a:hover:after
-  {
+  div.topBotomBordersOut a:hover:after {
     opacity: 1;
     transform: translateY(0px);
   }
@@ -500,8 +521,7 @@ footer {
     cursor: pointer;
   }
 
-  div.topBotomBordersOut a:after
-  {
+  div.topBotomBordersOut a:after {
     position: absolute;
     right: 0px;
     width: 40px;
@@ -512,14 +532,12 @@ footer {
     transition: all 0.3s;
   }
 
-  div.topBotomBordersOut a:after
-  {
+  div.topBotomBordersOut a:after {
     bottom: 0px;
     transform: translateY(-10px);
   }
 
-  div.topBotomBordersOut a:hover:after
-  {
+  div.topBotomBordersOut a:hover:after {
     opacity: 1;
     transform: translateY(0px);
   }
@@ -587,6 +605,7 @@ footer {
     img {
       margin-top: 20%;
     }
+
     .price_text {
       margin-top: 15%;
     }
