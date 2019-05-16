@@ -62,36 +62,43 @@ p {
   }
 }
 
-a#backArrow{
-  border-radius:3px;
-  padding:10px;
-  font-size:15px;
-  text-align:center;
-  color:#fff;
-  background:rgba(0, 0, 0, 0.25);
-  position:fixed;
-  right:20px;
-  opacity:1;
-  z-index:99999;
-  transition:all ease-in 0.2s;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+#backArrow {
+  border-radius: 100%;
+  width: 46px;
+  height: 46px;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  color: lighten(black, 75%);
+  border: solid 2px lighten(black, 75%);
+  position: fixed;
+  right: 30px;
+  opacity: 1;
+  z-index: 99999;
+  transition: all ease-in 0.2s;
   text-decoration: none;
-}
-a#backArrow:before{ content: "\25b2"; }
-a#backArrow:hover{
-  background:rgba(0, 0, 0, 1);
-  transition:all ease-in 0.2s;
-}
-a#backArrow.invisible{
-  bottom:-35px;
-  opacity:0;
-  transition:all ease-in 0.5s;
-}
 
-a#backArrow.visible{
-  bottom:55px;
-  opacity:1;
+
+  &:before {
+    content: "\25b2";
+  }
+
+  &:hover {
+    transition: all ease-in 0.2s;
+    background: lighten(black, 75%);
+    color: white;
+  }
+
+  &.visible {
+    bottom: 4vw;
+    opacity: 1;
+  }
+
+  &.invisible {
+    bottom: -35px;
+    opacity: 0;
+    transition: all ease-in 0.5s;
+  }
 }
 
 #background {
@@ -370,7 +377,7 @@ footer {
 @media (max-width: 765px) {
   .navbar-collapse {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 
     .navbar-nav {
       background-color: rgba($darkGrey, .9);

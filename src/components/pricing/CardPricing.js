@@ -16,7 +16,7 @@ const CardPricing = props => {
                             <p className="presentation">{props.equipment}</p>
                             <p className="presentation">{props.details}</p>
                         </div>
-                        <OrderPricing message={props.message} />
+                        <OrderPricing message={props.message}/>
                     </div>
                 </div>
             </ScrollAnimation>

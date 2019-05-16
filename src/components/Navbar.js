@@ -5,7 +5,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div>
                 <a href="#home">
-                    <img alt="Logo" src="../../images/Logo.png" className="logo"/>
+                    <img alt="Logo Bonjour+" src="../../images/Logo.png" className="logo"/>
                 </a>
             </div>
             <button className="navbar-toggler" type="button" data-toggle="collapse"

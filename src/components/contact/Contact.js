@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css';
 
@@ -50,7 +50,7 @@ export default class Contact extends Component {
     handleChange = event => {
         const name = event.target.name;
         const value = event.target.value;
-        this.setState({ [name]: value });
+        this.setState({[name]: value});
 
     };
 

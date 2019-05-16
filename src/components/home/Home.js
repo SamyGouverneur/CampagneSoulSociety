@@ -8,14 +8,14 @@ const Home = () => {
             <div className="row m-0 px-5">
                 <div className="text col-sm-8 col-xl-7">
                     <div className="row no-gutters">
-                        <ScrollAnimation animateIn="slideInDown" style={{ zIndex: 50 }}>
+                        <ScrollAnimation animateIn="slideInDown" style={{zIndex: 50}}>
                             <h1>L'interphone nouvelle génération
                                 qui s'adapte à votre mode de vie.</h1>
                         </ScrollAnimation>
                     </div>
                     <div className="row no-gutters">
                         <p>Soyez joignable sur votre smartphone où que vous soyez,
-                                vous ne manquerez plus jamais une livraison.</p>
+                            vous ne manquerez plus jamais une livraison.</p>
                     </div>
                     <div className="row no-gutters mt-3">
                         <a className="button" href="#concept">Découvrir Bonjour+</a>
@@ -23,7 +23,9 @@ const Home = () => {
                 </div>
                 <ScrollAnimation animateIn="fadeIn">
                     <div className="illustration">
-                        <img src="/images/home_illustration.png" alt="" />
+                        <img src="/images/home_illustration.png"
+                             alt="Mise en situation de l'application Bonjour+ sur des écrans de smartphone"
+                        />
                     </div>
                 </ScrollAnimation>
             </div>
