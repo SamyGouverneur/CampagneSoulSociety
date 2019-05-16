@@ -1,5 +1,5 @@
 /* GENERAL */
-$bottomColor: rgb(42, 41, 41);
+$bottomColor: #2D2D2D;
 $orange: #FF9800;
 $darkGrey: #262626;
 
@@ -16,37 +16,40 @@ $darkGrey: #262626;
 
 h1 {
   font-size: calc(1.5rem + 2.5vw);
-  font-family: "BrandonGrotesque-Bold";
+  font-family: "BrandonGrotesque-Bold", sans-serif;
   z-index: 5;
 }
 
 h2 {
   font-size: calc(1.5em + 1vh);
-  font-family: "BrandonGrotesque-Bold";
+  font-family: "BrandonGrotesque-Bold", sans-serif;
 }
 
 h3 {
   font-size: 2.5em;
-  font-family: "BrandonGrotesque-Bold";
+  font-family: "BrandonGrotesque-Bold", sans-serif;
 }
 
 p {
   z-index: 5;
-  font-family: "BrandonText-Regular";
+  font-family: "BrandonText-Regular", sans-serif;
   line-height: 1em;
 }
 
 .logo {
-  background-color: #2D2D2D;
   padding: 10px 30px;
   width: 180px;
-  background-color: rgba(255, 255, 255, .1) !important;
+  background: $bottomColor !important;
+
+  &:hover {
+    background: lighten($darkGrey, 7%) !important;
+  }
 }
 
 .button {
   margin-top: 2%;
   z-index: 5;
-  font-family: "BrandonText-Regular";
+  font-family: "BrandonText-Regular", sans-serif;
   background-color: $orange;
   border: none;
   padding: 7pt 10pt;
@@ -90,7 +93,7 @@ p {
   }
 
   &.visible {
-    bottom: 4vw;
+    bottom: 6vw;
     opacity: 1;
   }
 
@@ -109,7 +112,7 @@ p {
 
 /* NAVBAR */
 .navbar-dark {
-  background-color: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0) !important;
 }
 
 .navbar {
@@ -126,7 +129,7 @@ p {
     color: white;
 
     &:focus {
-      outline: 0px !important;
+      outline: none !important;
     }
   }
 
@@ -135,7 +138,7 @@ p {
   }
 
   a {
-    font-family: "BrandonText-Regular";
+    font-family: "BrandonText-Regular", sans-serif;
     color: white !important;
     z-index: 5;
 
@@ -270,7 +273,7 @@ html {
       padding-top: 25px;
       padding-bottom: 20px;
       border-bottom: solid 3px lighten($darkGrey, 20%);
-      font-family: "BrandonGrotesque-Bold";
+      font-family: "BrandonGrotesque-Bold", sans-serif;
     }
 
     .active {
@@ -316,6 +319,7 @@ html {
 
   form {
     max-width: 400px;
+    font-family: "BrandonText-Regular", sans-serif;
   }
 
   input {
@@ -326,7 +330,7 @@ html {
     width: 200px;
 
     &:focus {
-      outline: 0px !important;
+      outline: none !important;
     }
   }
 
@@ -341,7 +345,7 @@ html {
     padding: 15px;
 
     &:focus {
-      outline: 0px !important;
+      outline: none !important;
     }
   }
 
@@ -357,44 +361,55 @@ footer {
   .logo {
     position: absolute;
     bottom: 0;
+
+    &:hover {
+      background: lighten($darkGrey, 7%) !important;
+    }
   }
 
   .social-media {
     width: 30px;
+    transition: all 0.3s;
+    border-radius: 100%;
+    background: transparent;
+
+    &:hover {
+      background: $orange;
+      border-radius: 100%;
+      transition: all 0.3s;
+    }
   }
 
   .links {
     color: white;
-    font-family: "BrandonText-Regular";
+    font-family: "BrandonText-Regular", sans-serif;
   }
 
-  .bottomBorder a {
-    position: relative;
-    text-decoration: none;
-    cursor: pointer;
-  }
+  .bottomBorder {
+    a {
+      position: relative;
+      text-decoration: none;
+      cursor: pointer;
 
-  div.bottomBorder a:after {
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: $orange;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-  }
+      &:after {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: $orange;
+        content: "";
+        opacity: 0;
+        transition: all 0.3s;
+        bottom: -10px;
+        transform: translateY(-10px);
+      }
 
-  div.bottomBorder a:after {
-    bottom: -10px;
-    transform: translateY(-10px);
+      &:hover:after {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
   }
-
-  div.bottomBorder a:hover:after {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-
 }
 
 /* MEDIA QUERIES */
@@ -422,10 +437,6 @@ footer {
     }
   }
 
-  .pricing_card {
-    width: 100% !important;
-  }
-
   .plaque {
     margin-left: 0 !important;
   }
@@ -437,6 +448,15 @@ footer {
     .logo {
       background-color: rgba(0, 0, 0, 0) !important;
       position: static;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #home {
+    .button {
+      font-size: 1.1rem;
+      padding: 10px;
     }
   }
 }
@@ -470,31 +490,32 @@ footer {
 
 @media (min-width: 992px) {
   .navbar-nav a {
-    color: #FFF;
+    color: white;
     text-decoration: none;
     position: relative;
     cursor: pointer;
   }
 
-  div.topBotomBordersOut a:after {
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: $orange;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-  }
+  .topBotomBordersOut {
+    a {
+      &:after {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background: $orange;
+        content: "";
+        opacity: 0;
+        transition: all 0.3s;
+        bottom: 0px;
+        transform: translateY(-10px);
+      }
 
-  div.topBotomBordersOut a:after {
-    bottom: 0px;
-    transform: translateY(-10px);
-  }
-
-  div.topBotomBordersOut a:hover:after {
-    opacity: 1;
-    transform: translateY(0px);
+      &:hover:after {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
   }
 }
 
@@ -511,50 +532,36 @@ footer {
       padding-left: 30px !important;
       height: 100%;
       width: 100%;
+
+      a {
+        color: white;
+        text-decoration: none;
+        position: relative;
+        cursor: pointer;
+      }
     }
   }
 
-  .navbar-nav a {
-    color: #FFF;
-    text-decoration: none;
-    position: relative;
-    cursor: pointer;
-  }
+  .topBotomBordersOut {
+    a {
+      &:after {
+        position: absolute;
+        right: 0;
+        width: 40px;
+        height: 2px;
+        background: $orange;
+        content: "";
+        opacity: 0;
+        transition: all 0.3s;
+        bottom: 0;
+        transform: translateY(-10px);
+      }
 
-  div.topBotomBordersOut a:after {
-    position: absolute;
-    right: 0px;
-    width: 40px;
-    height: 2px;
-    background: $orange;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-  }
-
-  div.topBotomBordersOut a:after {
-    bottom: 0px;
-    transform: translateY(-10px);
-  }
-
-  div.topBotomBordersOut a:hover:after {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-
-  #pricing {
-    padding-bottom: 30vh;
-
-    .pricing_card {
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
+      &:hover:after {
+        opacity: 1;
+        transform: translateY(0px);
+      }
     }
-  }
-
-  .prices_display {
-    display: flex !important;
-    flex-direction: row !important;
   }
 }
 

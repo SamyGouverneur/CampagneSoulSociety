@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css';
 
 export default class Contact extends Component {
@@ -58,10 +57,8 @@ export default class Contact extends Component {
         return (
             <div id="contact" className="pt-5">
                 <div className="col py-5 mt-5">
-                    <ScrollAnimation animateIn="slideInDown">
-                        <h2 className="text-center mt-5">Contact</h2>
-                        <p className="text-center mb-5">Formulaire de contact. Chouette.</p>
-                    </ScrollAnimation>
+                    <h2 className="text-center mt-5">Contact</h2>
+                    <p className="text-center mb-5">Formulaire de contact. Chouette.</p>
                     <form onSubmit={this.handleSubmit} className="mx-auto mb-5">
                         <div className="row no-gutters errorMessage">{this.state.errorName}</div>
                         <div className="row form-group no-gutters">

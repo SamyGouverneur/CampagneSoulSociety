@@ -9,9 +9,17 @@ const Footer = () => {
                 </a>
             </div>
             <div className="col-md-6 col-xs-1 my-auto py-4 pr-lg-4 text-center bottomBorder">
-                <a href="CGV" className="links mx-3">CGV</a>
-                <a href="legal-notice" className="links mx-3">Mentions Légales</a>
-                <a href="partenaires" className="links mx-3">Partenaires</a>
+                <div className="row">
+                    <div className="col-xs-12 col-md-3">
+                        <a href="CGV" className="links mx-3">CGV</a>
+                    </div>
+                    <div className="col-xs-12 col-md-6">
+                        <a href="legal-notice" className="links mx-3">Mentions Légales</a>
+                    </div>
+                    <div className="col-xs-12 col-md-3">
+                        <a href="partenaires" className="links mx-3">Partenaires</a>
+                    </div>
+                </div>
             </div>
             <div className="col-md-3 col-xs-1 my-auto text-lg-right text-center py-4 py-lg-0 pr-lg-4">
                 <a href="https://www.facebook.com/BonjourPlus"
