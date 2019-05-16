@@ -5,13 +5,11 @@ import 'animate.css';
 const Home = () => {
     return (
         <div id="home" className="container-fluid bgColor d-flex align-items-md-center">
-            <div className="row m-0 px-5">
+            <div className="row m-0 px-sm-5">
                 <div className="text col-sm-8 col-xl-7">
                     <div className="row no-gutters">
-                        <ScrollAnimation animateIn="slideInDown" style={{zIndex: 50}}>
-                            <h1>L'interphone nouvelle génération
-                                qui s'adapte à votre mode de vie.</h1>
-                        </ScrollAnimation>
+                        <h1>L'interphone nouvelle génération
+                            qui s'adapte à votre mode de vie.</h1>
                     </div>
                     <div className="row no-gutters">
                         <p>Soyez joignable sur votre smartphone où que vous soyez,
