@@ -6,8 +6,7 @@ const Medias = () => {
             <div className="container py-5 mt-5">
                 <div className="row">
                     <div className="col">
-                        <h2 className="text-center">Ils parlent de nous !</h2>
-                        <p className="text-center">Youpiiiiiiiiiiiii iiiiiii !</p>
+                        <h2 className="text-center">Ils parlent de nous</h2>
                         <div className="row mt-5 speakers_logos">
                             <div className="col-xs-12 col-md-4 text-center mb-md-0 mb-5">
                                 <img src="/images/parteners/france3.jpg" alt="logo France 3"/>
@@ -31,8 +30,7 @@ const Medias = () => {
                 </div>
                 <div className="row">
                     <div className="col">
-                        <h2 className="pt-5 mt-5 text-center">On a gagné des tucs !</h2>
-                        <p className="text-center mb-5">On est les meilleurs, c'est tout !</p>
+                        <h2 className="pt-5 mt-5 text-center">Nos prix</h2>
                         <div className="my-auto d-flex align-items-center justify-content-center">
                             <div className="row my-auto w-100">
                                 <div className="col-xs-12 col-md-4 text-center my-mb-mb-auto mb-md-0 mb-5">

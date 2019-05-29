@@ -12,7 +12,7 @@ class Pricing extends Component {
         user: "1 utilisateur",
         equipment: "1 interphone",
         details: "Message texte",
-        message: "C'est moins cher que gratuit !"
+        message: "Bonjour, je suis intéressé par le formfait Freemium"
     };
 
     componentDidMount() {
@@ -41,7 +41,7 @@ class Pricing extends Component {
                     user: "1 utilisateur",
                     equipment: "1 interphone",
                     details: "Message texte",
-                    message: "C'est moins cher que gratuit !"
+                    message: "Bonjour, je suis intéressé par le formfait Freemium."
                 });
                 tabFreemium.className = 'tab-link active';
                 tabPremium.className = 'tab-link';
@@ -55,7 +55,7 @@ class Pricing extends Component {
                     user: "3 utilisateurs",
                     equipment: "2 interphones",
                     details: "Audio et vidéo",
-                    message: "Pour le prix de deux kébabs !"
+                    message: "Bonjour, je suis intéressé par le formfait Premium."
                 });
                 tabFreemium.className = 'tab-link';
                 tabPremium.className = 'tab-link active';
@@ -69,7 +69,7 @@ class Pricing extends Component {
                     user: "Utilisateurs multiples",
                     equipment: "Interphones multiples",
                     details: "Options personnalisées",
-                    message: "Bon là j'ai pas d'idées de messages."
+                    message: "Bonjour, je suis intéressé par le formfait Entreprise."
                 });
                 tabFreemium.className = 'tab-link';
                 tabPremium.className = 'tab-link';
@@ -83,7 +83,7 @@ class Pricing extends Component {
                     user: "1 utilisateur",
                     equipment: "1 interphone",
                     details: "Message texte",
-                    message: "C'est moins cher que gratuit !"
+                    message: "Bonjour, je suis intéressé par le formfait Freemium."
                 });
                 tabFreemium.className = 'tab-link active';
                 tabPremium.className = 'tab-link';
@@ -102,7 +102,8 @@ class Pricing extends Component {
                                 <h2>Tarifs</h2>
                             </div>
                             <div className="row mx-0 d-flex justify-content-center">
-                                <p>Les offres seront bientôt disponibles !</p>
+                                <p>Les offres seront bientôt disponibles, contactez-nous dès maintenant pour commander
+                                    votre forfait.</p>
                             </div>
 
                             {tabsPricing ?
@@ -158,7 +159,7 @@ class Pricing extends Component {
                                         user="1 utilisateur"
                                         equipment="1 interphone"
                                         details="Message texte"
-                                        message="C'est moins cher que gratuit !"
+                                        message="Bonjour, je suis intéressé par le formfait Freemium."
                                     />
                                     <CardPricing
                                         format="Premium"
@@ -167,7 +168,7 @@ class Pricing extends Component {
                                         user="3 utilisateurs"
                                         equipment="2 interphones"
                                         details="Audio et vidéo"
-                                        message="Pour le prix de deux kébabs !"
+                                        message="Bonjour, je suis intéressé par le formfait Premium."
                                     />
                                     <CardPricing
                                         format="Entreprise"
@@ -176,7 +177,7 @@ class Pricing extends Component {
                                         user="Utilisateurs multiples"
                                         equipment="Interphones multiples"
                                         details="Options personnalisées"
-                                        message="Bon là j'ai pas d'idées de messages."
+                                        message="Bonjour, je suis intéressé par le formfait Entreprise."
                                     />
                                 </div>
                             }

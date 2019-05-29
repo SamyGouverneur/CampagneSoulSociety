@@ -317,7 +317,7 @@ html {
   color: white;
   background: darken($darkGrey, 5%);
 
-  form {
+  form, .alert {
     max-width: 400px;
     font-family: "BrandonText-Regular", sans-serif;
   }
