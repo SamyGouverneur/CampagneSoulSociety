@@ -17,9 +17,9 @@ exports.sendMail = (req, res) => {
 
     // send mail with defined transport object
     const info = transporter.sendMail({
-        from: 'team@projet.io', // sender address
-        to: 'team@projet.io', // list of receivers
-        subject: "Contact Site Co OGong ✔", // Subject line
+        from: '', // sender address
+        to: '', // list of receivers
+        subject: "Contactez moi ! ✔", // Subject line
         html:
         `<h1>Contact : ${query.name}</h1>
         <h2>Email : ${query.email}</h2>
